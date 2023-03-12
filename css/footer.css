@@ -49,10 +49,9 @@ footer div.theme-selector button:hover{
 	justify-content: center;
 }
 .footer-layer-padding{
-	width: 70%;
+	width: 100%;
 	height: 2px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px;
 	border-radius: 50px;
 	background: #FFFFFF;
 }
@@ -60,4 +59,62 @@ footer div.theme-selector button:hover{
 	font-size: 14px;
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+.contact-footer{
+	margin-top: 10px;
+}
+.contact-footer ul {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+.contact-footer *{
+	transition: all 1s;
+}
+.contact-footer ul li{
+	display: flex;
+}
+.contact-footer ul li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-footer ul li a div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.contact-footer ul li a div span:first-child{
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.contact-footer ul li a div span:last-child{
+	font-size: 20px;
+}
+.contact-footer ul li a img{
+	width: 50px;
+	height: 50px;
+	-webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+@media screen and (max-width: 730px){
+	.contact-footer ul li a img{
+    	width: 30px;
+    	height: 30px;
+    }
+	.contact-footer ul li a div span:first-child{
+		font-size: 13px;
+	}
+	.contact-footer ul li a div span:last-child{
+    	font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px){
+	.contact-footer ul {
+        flex-direction: column;
+    }
 }

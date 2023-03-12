@@ -35,10 +35,41 @@ function createTravelCard(dataHotel){
     contentLayer.appendChild(createStars(dataHotel.rating, dataHotel.price));
     dar.appendChild(contentLayer);
 
+    contentLayer = document.createElement("div");
+    contentLayer.classList.add("travel-card-content-flex-layer");
+    contentLayer.appendChild(createEmotes(dataHotel));
+    dar.appendChild(contentLayer);
+
 
     div.appendChild(dar);
     div.appendChild(createNextButton());
     dir.appendChild(div);
+}
+
+function createEmotes(hotelData){
+	var element = document.createElement("div");
+    element.classList.add("travel-card-status-display");
+
+	var badges = hotelData.badges;
+
+	for(var i = 0; i < badges.length; i++){
+		var div = document.createElement("div");
+
+		var img = document.createElement("img");
+		img.src = badges[i].img;
+		if(badges[i].background != null){
+			img.classList.add("background-custom");
+		}
+		div.appendChild(img);
+
+		var text = document.createElement("h3");
+		text.innerText = badges[i].text;
+		div.appendChild(text);
+
+		element.appendChild(div);
+	}
+
+    return element;
 }
 
 function createName(dataHotel){

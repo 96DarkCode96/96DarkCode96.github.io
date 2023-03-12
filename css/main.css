@@ -25,7 +25,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	width: var(--travel_card_width);
-	height: var(--travel_card_height);
+	min-height: var(--travel_card_height);
 	background: var(--color_travel_card);
 	border-radius: 3px;
 	border: 1px solid var(--color_travel_card_border);
@@ -195,6 +195,33 @@ main{
 	align-items: center;
 	justify-content: center;
 }
+
+.travel-card-status-display div:first-child{
+	margin-top: 5px;
+}
+.travel-card-status-display div img{
+	width: 30px;
+	margin-left: 10px;
+}
+.travel-card-status-display div img.background-custom{
+	background: #FFFFFF;
+	border-radius: 20px;
+	width: 26px;
+	padding: 2px;
+}
+.travel-card-status-display div h3{
+	font-size: 15px;
+	color: #000000;
+	margin-left: 10px;
+}
+.travel-card-status-display div{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
+
+
+
 .subtitle-small h2{
 	font-size: 30px;
 	color: #970C10;

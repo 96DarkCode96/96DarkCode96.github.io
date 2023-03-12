@@ -4,20 +4,77 @@
     "name": "Jastrzębia Port",
     "price": "23 690 Kč / týden",
     "imgPath": "./res/hotels/jastrzebia_port.jpg",
-    "rating": 4.75
+    "rating": 4.75,
+    "badges": [
+      {
+        "img": "./res/wifi-signal.png",
+        "text": "Wi-Fi zdarma"
+      },
+      {
+        "img": "./res/swimming.png",
+        "text": "Bazén"
+      },
+      {
+        "img": "./res/croissant.png",
+        "text": "Snídaně v ceně"
+      },
+      {
+        "img": "./res/bike.png",
+        "text": "Půjčovna kol",
+        "background": "true"
+      }
+    ]
   },
   {
     "region": "Leba",
     "name": "Villa del Mar",
     "price": "17 223 Kč / týden",
     "imgPath": "./res/hotels/villa_del_mar.jpg",
-    "rating": 4.55
+    "rating": 4.55,
+    "badges": [
+      {
+        "img": "./res/wifi-signal.png",
+        "text": "Wi-Fi zdarma"
+      },
+      {
+        "img": "./res/pets.png",
+        "text": "Domácí mazlíčci vítáni"
+      },
+      {
+        "img": "./res/bike.png",
+        "text": "Půjčovna kol",
+        "background": "true"
+      }
+    ]
   },
   {
     "region": "Hel",
     "name": "Family Hel",
     "price": "30 292 Kč / týden",
     "imgPath": "./res/hotels/family_hel.jpg",
-    "rating": 4.3
+    "rating": 4.3,
+    "badges": [
+      {
+        "img": "./res/wifi-signal.png",
+        "text": "Wi-Fi zdarma"
+      },
+      {
+        "img": "./res/swimming.png",
+        "text": "Bazén"
+      },
+      {
+        "img": "./res/dish.png",
+        "text": "Polopenze v ceně"
+      },
+      {
+        "img": "./res/pets.png",
+        "text": "Domácí mazlíčci vítáni"
+      },
+      {
+        "img": "./res/bike.png",
+        "text": "Půjčovna kol",
+        "background": "true"
+      }
+    ]
   }
 ]
