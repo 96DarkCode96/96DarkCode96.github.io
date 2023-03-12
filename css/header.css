@@ -2,6 +2,7 @@ header{
 	position: fixed;
     background: var(--color_header);
     width: 100%;
+    min-width: 450px !important;
     height: var(--height_header);
     z-index: 999;
     overflow: hidden;
