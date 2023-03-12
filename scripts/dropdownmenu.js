@@ -37,21 +37,12 @@ function dropDownMenu(){
 	}
 }
 function hideDropDownMenu(){
-	for(let i = 0; i < defaultButtons.length; i++){
-		defaultButtons[i].style.display = null;
-	}
-	for(let i = 0; i < buttons.length; i++){
-		var button = buttons[i];
-		button.style.display = "none";
-	}
 	dropDownMenuValue = 0;
 	document.querySelectorAll("header ul li.menu-button")[0].classList.remove("active");
+	document.querySelectorAll("header")[0].style.overflow = null;
 }
 function showDropDownMenu(){
-	for(let i = 0; i < buttons.length; i++){
-		var button = buttons[i];
-		button.style.display = null;
-	}
 	dropDownMenuValue = 1;
 	document.querySelectorAll("header ul li.menu-button")[0].classList.add("active");
+	document.querySelectorAll("header")[0].style.overflow = "visible";
 }

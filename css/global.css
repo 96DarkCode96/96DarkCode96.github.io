@@ -21,11 +21,11 @@
 }
 .dark-theme{
     --color_background: #000000;
-    --color_background_dark: #050A30;
+    --color_background_dark: #000000;
     --color_loader: #FECF0F;
     --color_text: #FFFFFF;
-    --color_footer: #050A30;
-    --color_header: #050A30;
+    --color_footer: #000000;
+    --color_header: #000000;
     --color_nav_button_hover: #FECF0F;
     --color_nav_active_button_hover: #00FF00;
 	--color_nav_menu: #00BBBB;
@@ -73,6 +73,7 @@ body{
 }
 body > * {
 	min-width: var(--min_width_html);
+    _width: expression( document.body.clientWidth > 1000 ? "450px" : "auto" );
 }
 
 body .pageLoader{

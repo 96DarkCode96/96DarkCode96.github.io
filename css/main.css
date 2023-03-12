@@ -3,7 +3,6 @@ main{
 	margin-top: var(--height_header);
 	display: flex;
 	flex-direction: column;
-	min-width: var(--min_width_html);
 	font-family: 'Bona Nova';
 }
 

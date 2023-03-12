@@ -2,7 +2,6 @@ footer{
 	display: grid;
 	background: var(--color_footer);
 	width: 100%;
-	min-width: var(--min_width_html);
 	z-index: 1;
 }
 footer div.theme-selector{

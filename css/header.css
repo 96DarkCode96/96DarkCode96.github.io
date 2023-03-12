@@ -4,6 +4,7 @@ header{
     width: 100%;
     height: var(--height_header);
     z-index: 999;
+    overflow: hidden;
 }
 header ul{
 	width: 100%;
@@ -151,6 +152,7 @@ header ul li.button-call a img{
 		background: var(--color_dropdown_menu);
 		padding: 0px;
 		z-index: 998;
+		border-bottom: 1px solid var(--color_dropdown_menu_text);
 	}
 	header ul li.button:nth-child(n+4) a span{
         color: var(--color_dropdown_menu_text);
@@ -177,6 +179,7 @@ header ul li.button-call a img{
         background: var(--color_dropdown_menu);
         padding: 0px;
         z-index: 998;
+        border-bottom: 1px solid var(--color_dropdown_menu_text);
     }
     header ul li.button:nth-child(n+3) a span{
         color: var(--color_dropdown_menu_text);
@@ -199,7 +202,7 @@ header ul li.button-call a img{
         width: 100%;
         position: absolute !important;
         right: 0px;
-        top: calc(var(--height_header) * var(--local_dropdown_menu_top) + 1px * var(--local_dropdown_menu_top) - 1px);
+        top: calc(var(--height_header) * var(--local_dropdown_menu_top));
         background: var(--color_dropdown_menu);
         padding: 0px;
         z-index: 998;
