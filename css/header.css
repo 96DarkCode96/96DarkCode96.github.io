@@ -97,6 +97,7 @@ header ul li.button:hover a > *, header ul li.menu-button:hover a > *{
 header ul li.menu-button{
 	padding: 0px;
 	display: none;
+	position: absolute !important;
 }
 header ul li.menu-button span{
 	padding-right: 10px;
