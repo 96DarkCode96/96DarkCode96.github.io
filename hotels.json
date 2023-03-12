@@ -1,0 +1,23 @@
+[
+  {
+    "region": "Jastrzębia Góra",
+    "name": "Jastrzębia Port",
+    "price": "23 690 Kč / týden",
+    "imgPath": "./res/hotels/jastrzebia_port.jpg",
+    "rating": 4.75
+  },
+  {
+    "region": "Leba",
+    "name": "Villa del Mar",
+    "price": "17 223 Kč / týden",
+    "imgPath": "./res/hotels/villa_del_mar.jpg",
+    "rating": 4.55
+  },
+  {
+    "region": "Hel",
+    "name": "Family Hel",
+    "price": "30 292 Kč / týden",
+    "imgPath": "./res/hotels/family_hel.jpg",
+    "rating": 4.3
+  }
+]
