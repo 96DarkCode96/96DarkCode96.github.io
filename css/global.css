@@ -47,7 +47,7 @@ img{
 	--height_header: 60px;
 	--height_footer: 80px;
 	--duration_header_button: 0.2s;
-	--min_width_html: 450px;
+	--min_width_html: 400px;
 
 	--travel_card_width: 300px;
 	--travel_card_height: 400px;
@@ -124,11 +124,6 @@ body .pageLoader img{
     100% {
         offset-rotate: -50deg;
         offset-distance: 100%;
-    }
-}
-@media screen and (max-width: 340px){
-    body .pageLoader h2{
-        display: none;
     }
 }
 

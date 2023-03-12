@@ -2,7 +2,6 @@ header{
 	position: fixed;
     background: var(--color_header);
     width: 100%;
-    min-width: 450px !important;
     height: var(--height_header);
     z-index: 999;
     overflow: hidden;
@@ -230,5 +229,8 @@ header ul li.button-call a img{
 	header ul li.logo{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    header ul li.button-call{
+        padding-right: 40px !important;
     }
 }
