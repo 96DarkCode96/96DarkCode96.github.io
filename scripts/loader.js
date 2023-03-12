@@ -5,21 +5,9 @@ setTimeout(reloadAllTravelData, 1000);
 function reloadAllTravelData(){
 	var div = document.createElement("iframe");
 	div.src = "hotels.json";
-	div.id = "dataTravel";
 	div.style.display = "none";
-	div.addEventListener('message', event => {
-      if (event.origin.startsWith('http://your-first-site.com')) {
-        console.log(event.data);
-      } else {
-        return;
-      }
-    });
 	div.onload = (function(){
-		var a = null;
-		div.contentWindow.postMessage(a, null);
-		console.log(a);
 		var data = JSON.parse(div.contentWindow.document.body.querySelectorAll("pre")[0].innerHTML);
-		console.log(data);
 		while (dir.firstChild) {
             dir.removeChild(dir.firstChild);
         }
@@ -27,13 +15,13 @@ function reloadAllTravelData(){
         for(var i = 0; i < data.length; i++){
             createTravelCard(data[i]);
         }
+        document.body.removeChild(div);
         hidePageLoader();
 	});
 	document.body.appendChild(div);
 }
 
 function createTravelCard(dataHotel){
-	console.log(dataHotel);
     var div = document.createElement("div");
     div.classList.add("travel-card");
     div.appendChild(createImage(dataHotel.imgPath));

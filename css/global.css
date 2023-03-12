@@ -9,7 +9,7 @@
     --color_nav_button_hover: #FECF0F;
     --color_nav_active_button_hover: #00FF00;
 	--color_nav_menu: #00BBBB;
-	--color_dropdown_menu: #FECF0F;
+	--color_dropdown_menu: #FFBF00;
 	--color_dropdown_menu_text: #212D59;
 	--color_nav_active_dropdown_button_hover: #00FF00;
     --color_nav_dropdown_button_hover: #212D59;
@@ -29,11 +29,11 @@
     --color_nav_button_hover: #FECF0F;
     --color_nav_active_button_hover: #00FF00;
 	--color_nav_menu: #00BBBB;
-	--color_dropdown_menu: #FECF0F;
+	--color_dropdown_menu: #FFBF00;
 	--color_dropdown_menu_text: #212D59;
 	--color_nav_active_dropdown_button_hover: #00FF00;
     --color_nav_dropdown_button_hover: #212D59;
-    --color_travel_card: #FFBF00;
+    --color_travel_card: #FFBE00;
     --color_travel_card_inverse: #000C66;
     --color_travel_card_shadow: #000000;
     --color_travel_card_border: #0000FF;
@@ -47,7 +47,7 @@ img{
 	--height_header: 60px;
 	--height_footer: 80px;
 	--duration_header_button: 0.2s;
-	--min_width_html: 350px;
+	--min_width_html: 450px;
 
 	--travel_card_width: 300px;
 	--travel_card_height: 400px;
@@ -70,6 +70,9 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+}
+body > * {
+	min-width: var(--min_width_html);
 }
 
 body .pageLoader{

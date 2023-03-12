@@ -18,11 +18,11 @@ document.addEventListener("click", (event) => {
 	}
 });
 function onResizeDropDownMenu(width){
-	if(width > 900){
+	if(width > 1135){
 		buttons = [];
-	}else if(width >= 891){
+    }else if(width >= 920){
 		buttons = document.querySelectorAll("header ul li.button:nth-child(n+4)");
-	}else if(width >= 579){
+	}else if(width >= 755){
 		buttons = document.querySelectorAll("header ul li.button:nth-child(n+3)");
 	}else{
 		buttons = document.querySelectorAll("header ul li.button:nth-child(n+2)");
@@ -50,7 +50,7 @@ function hideDropDownMenu(){
 function showDropDownMenu(){
 	for(let i = 0; i < buttons.length; i++){
 		var button = buttons[i];
-		button.style.display = "inline-flex";
+		button.style.display = null;
 	}
 	dropDownMenuValue = 1;
 	document.querySelectorAll("header ul li.menu-button")[0].classList.add("active");
