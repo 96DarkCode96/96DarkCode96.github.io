@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap');
+.light-theme{
+	--color_errorCodeBG: #FFFFFF;
+	--color_errorCode: #050A30;
+	--colorBorderImage: #000000;
+	--filterInvert: 0;
+}
+.dark-theme{
+	--color_errorCodeBG: #1F1F1F;
+	--color_errorCode: #FFFFFF;
+	--colorBorderImage: #FFFFFF;
+	--filterInvert: 1;
+}
+
+main {
+	background: var(--color_errorCodeBG);
+}
+
+main .errorCode{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+main .errorCode > div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .errorCode div > *{
+	color: var(--color_errorCode);
+	transition: all 1s;
+}
+main .errorCode h1{
+	margin: 0px;
+	padding: 0px;
+	font-size: 160px;
+	font-weight: 900;
+	font-family: 'Merienda', cursive;
+	text-shadow: 2px 2px #AAAAAA;
+}
+main .errorCode h2{
+	margin-top: 40px;
+	font-size: 50px;
+	font-weight: 600;
+	font-family: 'Merienda';
+    text-shadow: 1px 1px #AAAAAA;
+}
+main .errorCode h3{
+	margin-top: 30px;
+	font-size: 25px;
+	font-weight: 900;
+	font-family: 'Roboto Slab', serif;
+}
+main .errorCode h4{
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	font-size: 25px;
+ 	font-weight: 900;
+ 	font-family: 'Roboto Slab', serif;
+}
+@media screen and (max-width: 730px){
+	main .errorCode h1{
+		font-size: 120px;
+	}
+	main .errorCode h2{
+        font-size: 35px;
+    }
+    main .errorCode h3{
+        font-size: 20px;
+    }
+	main .errorCode h4{
+        font-size: 15px;
+    }
+}
+
+main .hotelContent{
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+main .hotelContent .large-image{
+	display: none;
+}
+
+main .hotelContent .hotelGalleryContainer{
+	width: calc(100% - 40px);
+	justify-content: center;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, 300px);
+	margin: 20px;
+}
+
+main .hotelContent .hotelGalleryContainer div.small-image{
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px var(--color_errorCode), -1px 1px 1px var(--color_errorCode), 1px -1px 1px var(--color_errorCode), -1px -1px 1px var(--color_errorCode);
+}
+
+main .hotelContent .hotelGalleryContainer div.small-image img{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	transition: scale 1s;
+	filter: none !important;
+}
+
+main .hotelContent .hotelGalleryContainer div.small-image img:hover{
+	scale: 1.3;
+	cursor: pointer;
+}
+
+main .hotelContent .hotelGalleryBlurVisible{
+	position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    backdrop-filter: blur(3px);
+    min-width: var(--min_width_html);
+}
+
+main .hotelContent .hotelGalleryLarge{
+	position: relative;
+	z-index: 9999;
+
+	margin: 60px;
+	width: calc(100vw - 120px);
+	height: calc(100vh - 120px);
+
+	background: var(--color_errorCodeBG);
+	border: 2px solid var(--colorBorderImage);
+
+    display: grid;
+    grid-template-rows: 1fr 20px 240px;
+    min-width: var(--min_width_html);
+
+    overflow: hidden;
+}
+main .hotelContent .hotelGallery p{
+	display: none;
+}
+main .hotelContent .hotelGalleryLarge > p{
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Roboto Slap', serif;
+	padding: 5px;
+	display: unset !important;
+}
+main .hotelContent .hotelGalleryLarge .hotelGalleryContainer{
+	position: relative;
+	min-width: 320px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 20px;
+	grid-template-rows: 200px;
+}
+main .hotelContent .hotelGalleryLarge .large-image{
+	position: relative;
+	display: flex;
+	padding-top: 20px;
+	flex-direction: row;
+	width: 100%;
+	max-height: 100%;
+	min-width: 320px;
+}
+main .hotelContent .hotelGalleryLarge .large-image .viewImage img{
+	display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: calc(100% - 20px);
+    max-width: calc(100% - 140px);
+    transform: translate(-50%, -50%);
+    filter: none !important;
+}
+main .hotelContent .hotelGalleryLarge .large-image .viewImage p{
+    z-index: 99999;
+    display: block;
+    position: absolute;
+    background: #000000AA;
+    padding: 5px;
+    color: #FFFFFF;
+    top: calc(100% - 25px);
+    left: 50%;
+    height: 20px;
+    max-width: calc(100% - 140px);
+    transform: translate(-50%, -50%);
+    filter: none !important;
+}
+
+main .hotelContent .hotelGallery .large-image .galleryButton{
+	display: none;
+}
+
+main .hotelContent .hotelGalleryLarge .large-image .galleryButton{
+	height: -webkit-fill-available;
+	position: relative;
+	display: grid !important;
+	place-items: center;
+}
+
+main .hotelContent .hotelGalleryLarge .large-image .galleryButton:first-child{
+	position: absolute;
+	left: 0px;
+}
+main .hotelContent .hotelGalleryLarge .large-image .galleryButton:last-child{
+	position: absolute;
+	right: 0px;
+}
+
+main .hotelContent .hotelGalleryLarge .large-image .galleryButton img{
+	padding: 10px;
+	width: 50px;
+	height: 50px;
+	filter: invert(var(--filterInvert));
+}
+
+main .hotelContent .hotelGalleryLarge .large-image .galleryButton img:hover{
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+	main .hotelContent .hotelGalleryLarge{
+        grid-template-rows: 1fr 50px 0px;
+    }
+	main .hotelContent .hotelGalleryLarge > p{
+    	padding: 5px;
+        padding-bottom: 50px;
+    }
+}

@@ -7,13 +7,13 @@ function reloadAllTravelData(){
 	div.src = "hotels.json";
 	div.style.display = "none";
 	div.onload = (function(){
-		var data = JSON.parse(div.contentWindow.document.body.querySelectorAll("pre")[0].innerHTML);
+		const data = JSON.parse(div.contentWindow.document.body.querySelectorAll("pre")[0].innerHTML);
 		while (dir.firstChild) {
             dir.removeChild(dir.firstChild);
         }
-        dir.style.setProperty('--travel_card_max_per_row', Math.min(data.length, 3));
-        for(var i = 0; i < data.length; i++){
-            createTravelCard(data[i]);
+        dir.style.setProperty('--travel_card_max_per_row', Math.min(data.hotels.length, 3));
+        for(var i = 0; i < data.hotels.length; i++){
+            createTravelCard(data, data.hotels[i]);
         }
         document.body.removeChild(div);
         hidePageLoader();
@@ -21,7 +21,7 @@ function reloadAllTravelData(){
 	document.body.appendChild(div);
 }
 
-function createTravelCard(dataHotel){
+function createTravelCard(wholeData, dataHotel){
     var div = document.createElement("div");
     div.classList.add("travel-card");
     div.appendChild(createImage(dataHotel.imgPath));
@@ -37,33 +37,34 @@ function createTravelCard(dataHotel){
 
     contentLayer = document.createElement("div");
     contentLayer.classList.add("travel-card-content-flex-layer");
-    contentLayer.appendChild(createEmotes(dataHotel));
+    contentLayer.appendChild(createEmotes(wholeData, dataHotel));
     dar.appendChild(contentLayer);
 
 
     div.appendChild(dar);
-    div.appendChild(createNextButton());
+    div.appendChild(createNextButton(dataHotel.id));
     dir.appendChild(div);
 }
 
-function createEmotes(hotelData){
+function createEmotes(wholeData, hotelData){
 	var element = document.createElement("div");
     element.classList.add("travel-card-status-display");
 
 	var badges = hotelData.badges;
+	var badgeList = wholeData.badges;
 
 	for(var i = 0; i < badges.length; i++){
 		var div = document.createElement("div");
 
 		var img = document.createElement("img");
-		img.src = badges[i].img;
+		img.src = badgeList[badges[i]].img;
 		if(badges[i].background != null){
 			img.classList.add("background-custom");
 		}
 		div.appendChild(img);
 
 		var text = document.createElement("h3");
-		text.innerText = badges[i].text;
+		text.innerText = badgeList[badges[i]].text;
 		div.appendChild(text);
 
 		element.appendChild(div);
@@ -87,9 +88,9 @@ function createName(dataHotel){
 	return element;
 }
 
-function createNextButton(){
+function createNextButton(hotelID){
 	var div = document.createElement("a");
-	div.href = "#";
+	div.href = "./hotels/?hotelID=" + hotelID;
 	var a = document.createElement("span");
     a.innerText = "VÍCE";
     div.classList.add("travelCardNext");
