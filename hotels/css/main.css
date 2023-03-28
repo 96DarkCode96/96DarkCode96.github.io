@@ -4,12 +4,14 @@
 	--color_errorCode: #050A30;
 	--colorBorderImage: #000000;
 	--filterInvert: 0;
+	--color_galleryStatus: #000000;
 }
 .dark-theme{
 	--color_errorCodeBG: #1F1F1F;
 	--color_errorCode: #FFFFFF;
 	--colorBorderImage: #FFFFFF;
 	--filterInvert: 1;
+	--color_galleryStatus: #FFFFFF;
 }
 
 main {
@@ -123,7 +125,7 @@ main .hotelContent .hotelGalleryBlurVisible{
     height: 100vh;
     z-index: 9998;
     backdrop-filter: blur(3px);
-    min-width: var(--min_width_html);
+    min-width: 300px;
 }
 
 main .hotelContent .hotelGalleryLarge{
@@ -138,8 +140,8 @@ main .hotelContent .hotelGalleryLarge{
 	border: 2px solid var(--colorBorderImage);
 
     display: grid;
-    grid-template-rows: 1fr 20px 240px;
-    min-width: var(--min_width_html);
+    grid-template-rows: 1fr 40px;
+    min-width: 300px;
 
     overflow: hidden;
 }
@@ -150,16 +152,12 @@ main .hotelContent .hotelGalleryLarge > p{
 	font-size: 15px;
 	text-align: center;
 	font-family: 'Roboto Slap', serif;
+	color: var(--color_galleryStatus);
 	padding: 5px;
 	display: unset !important;
 }
 main .hotelContent .hotelGalleryLarge .hotelGalleryContainer{
-	position: relative;
-	min-width: 320px;
-	overflow: hidden;
-	margin: 0px;
-	padding: 20px;
-	grid-template-rows: 200px;
+	display: none;
 }
 main .hotelContent .hotelGalleryLarge .large-image{
 	position: relative;
@@ -181,6 +179,7 @@ main .hotelContent .hotelGalleryLarge .large-image .viewImage img{
     filter: none !important;
 }
 main .hotelContent .hotelGalleryLarge .large-image .viewImage p{
+    display: none !important;
     z-index: 99999;
     display: block;
     position: absolute;
@@ -228,10 +227,21 @@ main .hotelContent .hotelGalleryLarge .large-image .galleryButton img:hover{
 
 @media screen and (max-width: 600px){
 	main .hotelContent .hotelGalleryLarge{
-        grid-template-rows: 1fr 50px 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100vw - 20px);
     }
-	main .hotelContent .hotelGalleryLarge > p{
-    	padding: 5px;
-        padding-bottom: 50px;
+}
+@media screen and (max-width: 420px){
+	main .hotelContent .hotelGalleryLarge .large-image{
+        flex-direction: column;
+    }
+    main .hotelContent .hotelGalleryLarge .large-image .galleryButton{
+        height: fit-content;
+        width: -webkit-fill-available;
+    }
+    main .hotelContent .hotelGalleryLarge .large-image .galleryButton:last-of-type{
+        bottom: 0px;
+        top: unset;
     }
 }

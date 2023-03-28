@@ -56,6 +56,7 @@ function loadHotelData(hotelData){
 	let container = document.createElement("div");
 
 	//container.appendChild(loadHotelMap(hotelData.mapID));
+	container.appendChild(hotelDataDiv(hotelData));
 	container.appendChild(createHotelGallery(hotelData.gallery));
 	container.classList.add("hotelContent");
 	document.body.querySelectorAll("main")[0].appendChild(container);
@@ -68,6 +69,12 @@ function loadHotelMap(hotelMapID){
 	iframe.frameborder = "0";
 	iframe.style.border = "none";
 	return iframe;
+}
+
+function hotelDataDiv(hotelData){
+	let div = document.createElement("div");;
+	div.classList.add("hotelData");
+	return div;
 }
 
 function createHotelGallery(gallery){

@@ -7,14 +7,21 @@ document.addEventListener("click", (event) => {
 			}
 			v = v.parentElement;
 		}
-		document.querySelectorAll("main .hotelContent .hotelGalleryLarge")[0].classList.remove("hotelGalleryLarge");
-		document.querySelectorAll("main .hotelContent .hotelGalleryBlurVisible")[0].classList.remove("hotelGalleryBlurVisible");
+		hideGallery();
 	}
 });
 function isGalleryVisible(){
 	return document.querySelectorAll("main .hotelContent .hotelGalleryLarge").length != 0;
 }
-
+function hideGallery(){
+	document.querySelectorAll("main .hotelContent .hotelGalleryLarge")[0].classList.remove("hotelGalleryLarge");
+    document.querySelectorAll("main .hotelContent .hotelGalleryBlurVisible")[0].classList.remove("hotelGalleryBlurVisible");
+}
+document.addEventListener("keydown", (e) => {
+	if (e.keyCode==27 && isGalleryVisible()) {
+		hideGallery();
+	}
+});
 function galleryImgClick(data, imgID){
 	if(!isGalleryVisible()){
 		document.querySelectorAll("main .hotelContent .hotelGallery")[0].classList.add("hotelGalleryLarge");
@@ -25,23 +32,5 @@ function galleryImgClick(data, imgID){
 	document.querySelectorAll("main .hotelContent .hotelGalleryBlur")[0].classList.add("hotelGalleryBlurVisible");
 
 	var div = document.querySelectorAll("main .hotelContent .hotelGalleryLarge .hotelGalleryContainer")[0];
-	const gridComputedStyle = window.getComputedStyle(div);
-	var adder;
-	if(gridComputedStyle.getPropertyValue("grid-template-columns").split(" ").length % 2 == 0){
-		adder = gridComputedStyle.getPropertyValue("grid-template-columns").split(" ").length/2;
-	}else{
-		adder = (gridComputedStyle.getPropertyValue("grid-template-columns").split(" ").length-1)/2;
-	}
-	for(let i = 0; i < div.children.length; i++){
-		let child = div.children[i];
-		let order = (i - imgID + adder);
-		if(order < 0){
-			order += div.children.length;
-		}
-		if(order >= div.children.length){
-            order -= div.children.length;
-        }
-		child.style.order = order;
-	}
 	document.querySelectorAll("main .hotelContent .hotelGalleryLarge > p")[0].innerText = (imgID+1) + " / " + div.children.length;
 }
