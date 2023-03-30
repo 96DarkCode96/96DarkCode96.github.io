@@ -53,13 +53,8 @@ function unknownHotel(){
 }
 
 function loadHotelData(hotelData){
-	let container = document.createElement("div");
-
-	//container.appendChild(loadHotelMap(hotelData.mapID));
-	container.appendChild(hotelDataDiv(hotelData));
-	container.appendChild(createHotelGallery(hotelData.gallery));
-	container.classList.add("hotelContent");
-	document.body.querySelectorAll("main")[0].appendChild(container);
+	createHotelData(hotelData);
+	createHotelGallery(hotelData.gallery);
 }
 
 function loadHotelMap(hotelMapID){
@@ -71,24 +66,15 @@ function loadHotelMap(hotelMapID){
 	return iframe;
 }
 
-function hotelDataDiv(hotelData){
-	let div = document.createElement("div");;
-	div.classList.add("hotelData");
-	return div;
+function createHotelData(hotelData){
+
 }
 
 function createHotelGallery(gallery){
 	if(gallery == null || gallery.length == 0){
-		return document.createElement("div");
+		return;
 	}
-	var blur = document.createElement("div");
-    blur.classList.add("hotelGalleryBlur");
-
-    var containerAndButtons = document.createElement("div");
-    containerAndButtons.classList.add("hotelGallery");
-
-	var containerIMG = document.createElement("div");
-	containerIMG.classList.add("hotelGalleryContainer");
+	var containerIMG = document.querySelectorAll(".hotelGallery")[0];
 
 	for(var i = 0; i < gallery.length; i++){
 		const data = gallery[i];
@@ -101,79 +87,36 @@ function createHotelGallery(gallery){
 		const finalID = i;
 
 		imgContainer.classList.add("small-image");
-		imgContainer.onclick = (function (){
-			galleryImgClick(data, finalID);
+		imgContainer.onclick = (function (ev){
+			ev.preventDefault();
+            ev.stopPropagation();
+			galleryImgClick(gallery, finalID);
+			return false;
 		});
 		imgContainer.appendChild(img);
 		containerIMG.appendChild(imgContainer);
 	}
 
-	{
-
-		var imgContainer = document.createElement("div");
-
-		var button = document.createElement("div");
-        button.classList.add("galleryButton");
-
-        var buttonImg = document.createElement("img");
-        buttonImg.src = "./hotels/res/left-arrow.png";
-        buttonImg.onclick = (function () {
-            var id = document.querySelectorAll("main .hotelContent .large-image .viewImage img")[0].dataset.id;
-            if(id <= 0){
-                id = gallery.length-1;
-            }else{
-                id--;
-            }
-            galleryImgClick(gallery[id], id);
-        });
-
-		button.appendChild(buttonImg);
-
-        imgContainer.appendChild(button);
-
-		var imgC = document.createElement("div");
-        var img = document.createElement("img");
-
-		imgC.classList.add("viewImage");
-
-		var p = document.createElement("p");
-        imgC.appendChild(p);
-
-        imgContainer.classList.add("large-image");
-        imgC.appendChild(img);
-        imgContainer.appendChild(imgC);
-
-		var button = document.createElement("div");
-        button.classList.add("galleryButton");
-
-        var buttonImg = document.createElement("img");
-        buttonImg.src = "./hotels/res/right-arrow.png";
-        buttonImg.onclick = (function () {
-            var id = document.querySelectorAll("main .hotelContent .large-image .viewImage img")[0].dataset.id;
-            if(id >= gallery.length-1){
-                id = 0;
-            }else{
-                id++;
-            }
-            galleryImgClick(gallery[id], id);
-        });
-
-        button.appendChild(buttonImg);
-
-        imgContainer.appendChild(button);
-
-        containerAndButtons.appendChild(imgContainer);
-
-	}
-
-	{
-		var text = document.createElement("p");
-		text.classList.add("galleryStatus");
-
-		containerAndButtons.appendChild(text);
-	}
-
-	containerAndButtons.appendChild(containerIMG);
-	blur.appendChild(containerAndButtons);
-	return blur;
+	document.querySelectorAll(".hotelGalleryView > img")[0].onclick = (function (ev){
+		ev.preventDefault();
+        ev.stopPropagation();
+		let id = document.querySelectorAll(".hotelGalleryView-img > img")[0].dataset.imgID;
+		id--;
+		if(id < 0){
+			id = gallery.length-1;
+		}
+		galleryImgClick(gallery, id);
+		return false;
+	});
+	document.querySelectorAll(".hotelGalleryView > img")[1].onclick = (function (ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        let id = document.querySelectorAll(".hotelGalleryView-img > img")[0].dataset.imgID;
+        id++;
+        if(id >= gallery.length){
+            id = 0;
+        }
+        galleryImgClick(gallery, id);
+        return false;
+    });
 }
