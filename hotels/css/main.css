@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap');
+.light-theme{
+	--color_errorCodeBG: #FFFFFF;
+	--color_errorCode: #050A30;
+	--colorBorderImage: #000000;
+	--filterInvert: 0;
+	--color_galleryStatus: #000000;
+	--color_bg: #FFFFFF;
+}
+.dark-theme{
+	--color_errorCodeBG: #1F1F1F;
+	--color_errorCode: #FFFFFF;
+	--colorBorderImage: #FFFFFF;
+	--filterInvert: 1;
+	--color_galleryStatus: #FFFFFF;
+	--color_bg: #1F1F1F;
+}
+
+main {
+	background: var(--color_errorCodeBG);
+}
+
+main .errorCode{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+main .errorCode > div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .errorCode div > *{
+	color: var(--color_errorCode);
+	transition: all 1s;
+}
+main .errorCode h1{
+	margin: 0px;
+	padding: 0px;
+	font-size: 160px;
+	font-weight: 900;
+	font-family: 'Merienda', cursive;
+	text-shadow: 2px 2px #AAAAAA;
+}
+main .errorCode h2{
+	margin-top: 40px;
+	font-size: 50px;
+	font-weight: 600;
+	font-family: 'Merienda';
+    text-shadow: 1px 1px #AAAAAA;
+}
+main .errorCode h3{
+	margin-top: 30px;
+	font-size: 25px;
+	font-weight: 900;
+	font-family: 'Roboto Slab', serif;
+}
+main .errorCode h4{
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	font-size: 25px;
+ 	font-weight: 900;
+ 	font-family: 'Roboto Slab', serif;
+}
+@media screen and (max-width: 730px){
+	main .errorCode h1{
+		font-size: 120px;
+	}
+	main .errorCode h2{
+        font-size: 35px;
+    }
+    main .errorCode h3{
+        font-size: 20px;
+    }
+	main .errorCode h4{
+        font-size: 15px;
+    }
+}
+
+.hotelContent{
+	z-index: 3;
+	flex: 1;
+	background: var(--color_bg);
+}
+
+.hotelGallery{
+	margin: 30px auto;
+	display: grid;
+	justify-content: center;
+	max-width: 800px;
+	grid-template-columns: repeat(auto-fill, 220px);
+	grid-gap: 20px 20px;
+	place-items: center;
+}
+
+.small-image{
+	display: block;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.small-image img{
+	box-shadow: 1px 1px 1px #444;
+}
+
+.hotelGalleryViewBlur.visible{
+	display: unset !important;
+}
+.hotelGalleryViewBlur{
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 999;
+
+    overflow: hidden;
+    position: fixed;
+
+    display: none;
+
+    background: #0b0b0b;
+    opacity: .8;
+}
+
+.hotelGalleryView.visible{
+	display: grid !important;
+	grid-template-columns: 90px 1fr 90px;
+	place-items: center;
+}
+.hotelGalleryView{
+	z-index: 9999;
+
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+
+	display: none;
+	position: fixed;
+
+	cursor: zoom-out;
+}
+
+.hotelGalleryView-img{
+	position: relative;
+	display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    line-height: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.hotelGalleryView-img > img{
+	display: block;
+	width: auto;
+	max-width: calc(100vw - 180px);
+	max-height: 100vh;
+	height: auto;
+	line-height: 0;
+	box-sizing: border-box;
+	margin: 0 auto;
+	cursor: default;
+	padding: 40px 0px;
+}
+
+.hotelGalleryView-description{
+	height: 20px;
+	margin-top: -36px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    cursor: auto;
+}
+
+.hotelGalleryView-description > p{
+	font-family: 'Roboto Slab', serif;
+}
+
+.hotelGalleryView-description-text{
+	position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hotelGalleryView-description-img-count{
+	position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hotelGalleryView > img{
+	display: block;
+	width: 90px;
+	height: 90px;
+	cursor: pointer;
+	filter: invert(1);
+}
+.hotelGalleryView > img:hover{
+	filter: invert(0.8);
+}
+
+.small-image img{
+	width: 200px;
+}
+
+@media screen and (max-width: 600px){
+	.hotelGalleryView > img{
+    	width: 50px;
+    	height: 50px;
+    }
+}
+
+.hotelContentSelector{
+	width: 100%;
+	margin-top: 0px;
+	justify-content: center;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #000000;
+}
+.hotelContentSelector li{
+	overflow: hidden;
+	display: block;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: 5px;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #00AA00;
+	background: #00AA00;
+	cursor: pointer;
+	border-radius: 10px 10px 0px 0px;
+	margin-bottom: -1px;
+}
+.hotelContentSelector li.active{
+	background: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	color: #000000;
+}
+
+.hotelData.invisible{
+	display: none !important;
+}
+
+.hotelGallery.invisible{
+	display: none !important;
+}
