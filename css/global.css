@@ -21,7 +21,7 @@
 	--img_filter_grayscale: 0;
 }
 .dark-theme{
-    --color_background: #000000;
+    --color_background: #555555;
     --color_background_dark: #000000;
     --color_loader: #FECF0F;
     --color_text: #FFFFFF;
@@ -136,7 +136,8 @@ body .pageLoader img{
 	min-width: 50px !important;
 	width: 50px;
 	height: 50px;
-	background: #FFFFFF;
+	background: #DDD;
+    border: 2px #559 solid;
 	border-radius: 50%;
 	padding: 10px;
 }

@@ -62,8 +62,71 @@
 			</ul>
 		</header>
 		<main>
-		  	
-    </main>
+			<div class="contact-profiles">
+				<div class="contact-profile">
+					<img src="./about/res/face-1.jpg" alt="" class="contact-profile-user-image">
+					<h5 class="contact-profile-user-name">Ondřej Přizdichcal</h5>
+					<h5 class="contact-profile-user-work-position">Hlavní Programátor</h5>
+					<div class="contact-profile-user-socials">
+						<a href="https://www.instagram.com/########" class="contact-profile-user-social"><img src="./about/res/instagram.png" alt="Instagram logo"></a>
+						<a href="https://www.twitter.com/########" class="contact-profile-user-social"><img src="./about/res/twitter.png" alt="Twitter logo"></a>
+					</div>
+				</div>
+				<div class="contact-profile">
+					<img src="./about/res/face-2.jpg" alt="" class="contact-profile-user-image">
+					<h5 class="contact-profile-user-name">Tomáš Fuk</h5>
+					<h5 class="contact-profile-user-work-position">Hlavní Designer</h5>
+					<div class="contact-profile-user-socials">
+						<a href="https://www.instagram.com/########" class="contact-profile-user-social"><img src="./about/res/instagram.png" alt="Instagram logo"></a>
+						<a href="https://www.twitter.com/########" class="contact-profile-user-social"><img src="./about/res/twitter.png" alt="Twitter logo"></a>
+					</div>
+				</div>
+				<div class="contact-profile">
+					<img src="./about/res/face-3.jpg" alt="" class="contact-profile-user-image">
+					<h5 class="contact-profile-user-name">Jožo Sliedil</h5>
+					<h5 class="contact-profile-user-work-position">Manažer</h5>
+					<div class="contact-profile-user-socials">
+						<a href="https://www.twitter.com/########" class="contact-profile-user-social"><img src="./about/res/twitter.png" alt="Instagram logo"></a>
+						<a href="https://www.facebook.com/########" class="contact-profile-user-social"><img src="./about/res/facebook.png" alt="Twitter logo"></a>
+					</div>
+				</div>
+				<div class="contact-profile">
+					<img src="./about/res/face-4.jpg" alt="" class="contact-profile-user-image">
+					<h5 class="contact-profile-user-name">Jana Drobná</h5>
+					<h5 class="contact-profile-user-work-position">Mluvčí firmy</h5>
+					<div class="contact-profile-user-socials">
+						<a href="https://www.instagram.com/########" class="contact-profile-user-social"><img src="./about/res/instagram.png" alt="Instagram logo"></a>
+						<a href="https://www.facebook.com/########" class="contact-profile-user-social"><img src="./about/res/facebook.png" alt="Twitter logo"></a>
+					</div>
+				</div>
+			</div>
+			<div class="page-layer" style="display: none;">
+				<form class="contact-form" action="send-message.php">
+					<h6 class="contact-form-label">Kontaktujte nás</h6>
+					<div class="contact-form-content">
+						<div class="contact-form-layer">
+							<h6 class="contact-form-input-name">Jméno a příjmení</h6>
+							<input type="text" required="true" class="contact-form-input">
+						</div>
+						<div class="contact-form-layer">
+							<h6 class="contact-form-input-name">E-mail</h6>
+							<input type="email" required="true" class="contact-form-input">
+						</div>
+						<div class="contact-form-layer">
+							<h6 class="contact-form-input-name">Tel. číslo</h6>
+							<input type="tel" required="true" class="contact-form-input">
+						</div>
+						<div class="contact-form-layer">
+							<h6 class="contact-form-input-name">Zpráva</h6>
+							<textarea rows="5" required="true" class="contact-form-input-large"></textarea>
+						</div>
+					</div>
+					<div class="contact-form-submit">
+						<input type="submit" value="Odeslat" class="contact-submit">
+					</div>
+				</form>
+			</div>	
+		</main>
 		<footer>
 			<div class="footer-layer contact-footer">
 				<ul>
@@ -73,7 +136,7 @@
 					<li><a><img src="./res/clock_pure.png">
 						<div><span>PROVOZ</span><span>PO - PÁ od 8:00 - 22:00</span></div>
 					</a></li>
-					<li><a><img src="./res/email.png">
+					<li><a href="/subscribe-new.php"><img src="./res/email.png">
 						<div><span>ODBĚR</span><span>NOVINEK</span></div>
 					</a></li>
 				</ul>
@@ -100,5 +163,8 @@
 		<script src="./scripts/loadingScreen.js"></script>
 		<script src="./scripts/darkThemeCookies.js"></script>
 		<script src="./scripts/dropdownmenu.js"></script>
+		<script>
+			hidePageLoader();
+		</script>
 	</body>
 </html>
