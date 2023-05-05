@@ -2,11 +2,22 @@
     --color-image-border: #FFF;
     --color-user-name: #FFF;
     --color-user-work-position: #55FF55;
+    --color-page-layer-label: #FFF;
+    --color-about: #FFF;
 }
 .light-theme{
     --color-image-border: #000;
     --color-user-name: #000;
     --color-user-work-position: #019901;
+    --color-page-layer-label: #448;
+    --color-about: #000;
+}
+.page-layer-label h4{
+    font-size: 40px;
+    color: var(--color-page-layer-label);
+    width: fit-content;
+    padding: 40px;
+    font-family: 'Roboto Slab', serif;
 }
 .contact-profile{
     display: flex;
@@ -63,6 +74,7 @@
     padding-top: 10px;
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
+    text-align: center;
     color: var(--color-user-work-position);
 }
 .contact-profile-user-socials{
@@ -86,7 +98,9 @@
     background: var(--color_header);
     position: relative;
     margin: 20px;
+    margin-right: 50px;
     border: 1px #AAA solid;
+    float: right;
 }
 .contact-form-label{
     font-size: 30px;
@@ -135,4 +149,22 @@
     background: #FFF;
     padding: 10px;
     margin: 10px;
+}
+.contact-layer{
+    display: inline-block;
+    width: 100%;
+}
+.contact-about p{
+    color: var(--color-about);
+    font-size: 30px;
+    width:50%;
+    padding-left:25%;
+    text-align: justify;
+}
+@media screen and (max-width: 700px) {
+    .contact-about p{
+        width: 90%;
+        padding-left: 5%;
+        text-align: left !important;
+    }
 }

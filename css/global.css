@@ -18,7 +18,6 @@
     --color_travel_card_inverse: #000C66;
     --color_travel_card_shadow: #000000;
     --color_travel_card_border: #000C66;
-	--img_filter_grayscale: 0;
 }
 .dark-theme{
     --color_background: #555555;
@@ -38,12 +37,7 @@
     --color_travel_card_inverse: #000C66;
     --color_travel_card_shadow: #000000;
     --color_travel_card_border: #0000FF;
-   	--img_filter_grayscale: 0.5;
 }
-img{
-	filter: grayscale(var(--img_filter_grayscale));
-}
-
 *{
 	--height_header: 60px;
 	--height_footer: 80px;
