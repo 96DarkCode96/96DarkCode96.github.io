@@ -12,12 +12,44 @@
     --color-page-layer-label: #448;
     --color-about: #000;
 }
-.page-layer-label h4{
+.page-layer-label h4{   
     font-size: 40px;
     color: var(--color-page-layer-label);
     width: fit-content;
     padding: 40px;
     font-family: 'Roboto Slab', serif;
+}
+.contact-work-contact{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.contact-work-contact a{
+    display: block;
+}
+.contact-work-contact a img{
+    width: 100px;
+    height: 100px;
+}
+.contact-work-contact a:last-child{
+    margin-left: 40px;
+    display: flex;
+    background: #AFF;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.contact-work-contact a:last-child h4{
+    font-size: 40px;
+    color: #000;
+    font-family: 'Roboto Slab', serif;
+    padding: 20px;
+}
+.contact-contacts{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
 }
 .contact-profile{
     display: flex;
@@ -97,8 +129,8 @@
     height: 430px;
     background: var(--color_header);
     position: relative;
-    margin: 20px;
-    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border: 1px #AAA solid;
     float: right;
 }
@@ -151,7 +183,8 @@
     margin: 10px;
 }
 .contact-layer{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 .contact-about p{

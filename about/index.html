@@ -116,7 +116,7 @@ V Polsku vás čeká mnoho aktivit, které si můžete užít, jako například 
 				<div class="contact-profile">
 					<img src="./about/res/face-5.jpg" alt="" class="contact-profile-user-image">
 					<h5 class="contact-profile-user-name">Tomáš Doležal</h5>
-					<h5 class="contact-profile-user-work-position">Kontrolor hotelů</h5>
+					<h5 class="contact-profile-user-work-position">Kontrolor servírek</h5>
 					<div class="contact-profile-user-socials">
 						<a target="_blank" href="https://www.instagram.com/palovsky_d/" class="contact-profile-user-social"><img src="./about/res/instagram.png" alt="Instagram logo"></a>
 						<a target="_blank" href="https://www.tinder.com/########" class="contact-profile-user-social"><img src="./about/res/tinder.png" alt="Twitter logo"></a>
@@ -125,7 +125,7 @@ V Polsku vás čeká mnoho aktivit, které si můžete užít, jako například 
 				<div class="contact-profile">
 					<img src="./about/res/face-6.jpg" alt="" class="contact-profile-user-image">
 					<h5 class="contact-profile-user-name">Don Rayec</h5>
-					<h5 class="contact-profile-user-work-position">Kontrolor<br>rodinných domů</h5>
+					<h5 class="contact-profile-user-work-position">Kontrolor<br>rodinných záležitostí</h5>
 					<div class="contact-profile-user-socials">
 						<a target="_blank" href="https://www.twitter.com/########" class="contact-profile-user-social"><img src="./about/res/twitter.png" alt="Instagram logo"></a>
 						<a target="_blank" href="https://www.instagram.com/filipmatejov/" class="contact-profile-user-social"><img src="./about/res/instagram.png" alt="Twitter logo"></a>
@@ -143,38 +143,32 @@ V Polsku vás čeká mnoho aktivit, které si můžete užít, jako například 
 				<div class="contact-profile">
 					<img src="./about/res/face-8.jpg" alt="" class="contact-profile-user-image">
 					<h5 class="contact-profile-user-name">Jymin Dang</h5>
-					<h5 class="contact-profile-user-work-position">Agresor</h5>
+					<h5 class="contact-profile-user-work-position">Pobírač dotací</h5>
 					<div class="contact-profile-user-socials">
 						<a target="_blank" href="https://www.tinder.com/########" class="contact-profile-user-social"><img src="./about/res/tinder.png" alt="Instagram logo"></a>
 						<a target="_blank" href="https://www.instagram.com/uh.dang/" class="contact-profile-user-social"><img src="./about/res/instagram.png" alt="Twitter logo"></a>
 					</div>
 				</div>
 			</div>
-			<div class="page-layer-vertical page-layer-label">
-				<h4>Kontakty</h4>
-			</div>
 			<div class="contact-layer">
-				<div class="contact-contacts">
-					
-				</div>
-				<form class="contact-form" action="send-message.php">
+				<form class="contact-form" action="./sendMessage/index.php">
 					<h6 class="contact-form-label">Kontaktujte nás</h6>
 					<div class="contact-form-content">
 						<div class="contact-form-layer">
 							<h6 class="contact-form-input-name">Jméno a příjmení</h6>
-							<input type="text" required="true" class="contact-form-input">
+							<input name="name" type="text" required="true" class="contact-form-input">
 						</div>
 						<div class="contact-form-layer">
 							<h6 class="contact-form-input-name">E-mail</h6>
-							<input type="email" required="true" class="contact-form-input">
+							<input name="email" type="email" required="true" class="contact-form-input">
 						</div>
 						<div class="contact-form-layer">
 							<h6 class="contact-form-input-name">Tel. číslo</h6>
-							<input type="tel" required="true" class="contact-form-input">
+							<input name="telephone" type="tel" required="true" class="contact-form-input">
 						</div>
 						<div class="contact-form-layer">
 							<h6 class="contact-form-input-name">Zpráva</h6>
-							<textarea rows="5" required="true" class="contact-form-input-large"></textarea>
+							<textarea name="msg" rows="5" required="true" class="contact-form-input-large"></textarea>
 						</div>
 					</div>
 					<div class="contact-form-submit">
