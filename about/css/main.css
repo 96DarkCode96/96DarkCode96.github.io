@@ -124,7 +124,7 @@
     height: 50px;
     display: block;
 }
-.contact-form{
+.contact-form > table{
     width: 400px;
     height: 430px;
     background: var(--color_header);
