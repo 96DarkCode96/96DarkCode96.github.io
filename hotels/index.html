@@ -65,7 +65,7 @@
 			<div class="hotelContent">
 				<img style="width: 100%; height: 45px; object-fit: cover; position: absolute; z-index: -1;" src="./res/sea.jpg">
 				<ul class="hotelContentSelector">
-					<li id="selector-obecne" class="active" onclick="switchObecneInformace()">OBECNÉ INFORMACE</li>
+					<li id="selector-obecne" style="display: none;" class="active" onclick="switchObecneInformace()">OBECNÉ INFORMACE</li>
 					<li id="selector-galerie" onclick="switchGalerie()">GALERIE</li>
 				</ul>
 				<div class="hotelData visible">
@@ -124,5 +124,8 @@
 		<script src="./scripts/dropdownmenu.js"></script>
 		<script src="./hotels/scripts/loader.js"></script>
 		<script src="./hotels/scripts/gallery.js"></script>
+		<script>
+			switchGalerie();
+		</script>
 	</body>
 </html>

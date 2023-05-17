@@ -128,6 +128,780 @@
           "description": "Ubytování"
         }
       ]
+    },
+    {
+      "id": 3,
+      "region": "Jastrzębia Góra",
+      "name": "Jastrzębia Port",
+      "price": "23 690 Kč / týden",
+      "mapID": "kepataduma",
+      "imgPath": "./res/hotels/jastrzebia_port.jpg",
+      "rating": 4.75,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "breakfast-in-price",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/0/domek.jpg",
+          "description": "Zadní strana domku"
+        },
+        {
+          "src": "./hotels/res/hotels/0/herna.jpg",
+          "description": "Herna pro děti"
+        },
+        {
+          "src": "./hotels/res/hotels/0/posilovna.jpg",
+          "description": "Posilovna"
+        },
+        {
+          "src": "./hotels/res/hotels/0/restaurace.jpg",
+          "description": "Restaurace"
+        },
+        {
+          "src": "./hotels/res/hotels/0/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/0/plaz.jpg",
+          "description": "Vstup na pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/0/vybaveni.jpg",
+          "description": "Vybavení domácnosti"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "region": "Leba",
+      "name": "Villa del Mar",
+      "price": "17 223 Kč / týden",
+      "imgPath": "./res/hotels/villa_del_mar.jpg",
+      "rating": 4.55,
+      "badges": [
+        "wifi",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/1/balkon.jpg",
+          "description": "Balkón"
+        },
+        {
+          "src": "./hotels/res/hotels/1/koupelna.jpg",
+          "description": "Koupelna"
+        },
+        {
+          "src": "./hotels/res/hotels/1/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/1/loznice.jpg",
+          "description": "Ložnice"
+        },
+        {
+          "src": "./hotels/res/hotels/1/posezeni.jpg",
+          "description": "Venkovní posezení"
+        },
+        {
+          "src": "./hotels/res/hotels/1/vila.jpg",
+          "description": "Vila z přední strany"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "region": "Hel",
+      "name": "Family Hel",
+      "price": "30 292 Kč / týden",
+      "imgPath": "./res/hotels/family_hel.jpg",
+      "rating": 4.3,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "half-food-in-price",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/2/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/2/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/2/obyvaci_pokoj.jpg",
+          "description": "Obývací pokoj"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plan_ubytovani.jpg",
+          "description": "Plán ubytování"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plaz.jpg",
+          "description": "Pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/podzemni_garaz.jpg",
+          "description": "Podzemní garáž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/ubytovani.jpg",
+          "description": "Ubytování"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "region": "Jastrzębia Góra",
+      "name": "Jastrzębia Port",
+      "price": "23 690 Kč / týden",
+      "mapID": "kepataduma",
+      "imgPath": "./res/hotels/jastrzebia_port.jpg",
+      "rating": 4.75,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "breakfast-in-price",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/0/domek.jpg",
+          "description": "Zadní strana domku"
+        },
+        {
+          "src": "./hotels/res/hotels/0/herna.jpg",
+          "description": "Herna pro děti"
+        },
+        {
+          "src": "./hotels/res/hotels/0/posilovna.jpg",
+          "description": "Posilovna"
+        },
+        {
+          "src": "./hotels/res/hotels/0/restaurace.jpg",
+          "description": "Restaurace"
+        },
+        {
+          "src": "./hotels/res/hotels/0/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/0/plaz.jpg",
+          "description": "Vstup na pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/0/vybaveni.jpg",
+          "description": "Vybavení domácnosti"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "region": "Leba",
+      "name": "Villa del Mar",
+      "price": "17 223 Kč / týden",
+      "imgPath": "./res/hotels/villa_del_mar.jpg",
+      "rating": 4.55,
+      "badges": [
+        "wifi",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/1/balkon.jpg",
+          "description": "Balkón"
+        },
+        {
+          "src": "./hotels/res/hotels/1/koupelna.jpg",
+          "description": "Koupelna"
+        },
+        {
+          "src": "./hotels/res/hotels/1/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/1/loznice.jpg",
+          "description": "Ložnice"
+        },
+        {
+          "src": "./hotels/res/hotels/1/posezeni.jpg",
+          "description": "Venkovní posezení"
+        },
+        {
+          "src": "./hotels/res/hotels/1/vila.jpg",
+          "description": "Vila z přední strany"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "region": "Hel",
+      "name": "Family Hel",
+      "price": "30 292 Kč / týden",
+      "imgPath": "./res/hotels/family_hel.jpg",
+      "rating": 4.3,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "half-food-in-price",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/2/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/2/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/2/obyvaci_pokoj.jpg",
+          "description": "Obývací pokoj"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plan_ubytovani.jpg",
+          "description": "Plán ubytování"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plaz.jpg",
+          "description": "Pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/podzemni_garaz.jpg",
+          "description": "Podzemní garáž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/ubytovani.jpg",
+          "description": "Ubytování"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "region": "Jastrzębia Góra",
+      "name": "Jastrzębia Port",
+      "price": "23 690 Kč / týden",
+      "mapID": "kepataduma",
+      "imgPath": "./res/hotels/jastrzebia_port.jpg",
+      "rating": 4.75,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "breakfast-in-price",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/0/domek.jpg",
+          "description": "Zadní strana domku"
+        },
+        {
+          "src": "./hotels/res/hotels/0/herna.jpg",
+          "description": "Herna pro děti"
+        },
+        {
+          "src": "./hotels/res/hotels/0/posilovna.jpg",
+          "description": "Posilovna"
+        },
+        {
+          "src": "./hotels/res/hotels/0/restaurace.jpg",
+          "description": "Restaurace"
+        },
+        {
+          "src": "./hotels/res/hotels/0/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/0/plaz.jpg",
+          "description": "Vstup na pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/0/vybaveni.jpg",
+          "description": "Vybavení domácnosti"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "region": "Leba",
+      "name": "Villa del Mar",
+      "price": "17 223 Kč / týden",
+      "imgPath": "./res/hotels/villa_del_mar.jpg",
+      "rating": 4.55,
+      "badges": [
+        "wifi",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/1/balkon.jpg",
+          "description": "Balkón"
+        },
+        {
+          "src": "./hotels/res/hotels/1/koupelna.jpg",
+          "description": "Koupelna"
+        },
+        {
+          "src": "./hotels/res/hotels/1/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/1/loznice.jpg",
+          "description": "Ložnice"
+        },
+        {
+          "src": "./hotels/res/hotels/1/posezeni.jpg",
+          "description": "Venkovní posezení"
+        },
+        {
+          "src": "./hotels/res/hotels/1/vila.jpg",
+          "description": "Vila z přední strany"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "region": "Hel",
+      "name": "Family Hel",
+      "price": "30 292 Kč / týden",
+      "imgPath": "./res/hotels/family_hel.jpg",
+      "rating": 4.3,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "half-food-in-price",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/2/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/2/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/2/obyvaci_pokoj.jpg",
+          "description": "Obývací pokoj"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plan_ubytovani.jpg",
+          "description": "Plán ubytování"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plaz.jpg",
+          "description": "Pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/podzemni_garaz.jpg",
+          "description": "Podzemní garáž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/ubytovani.jpg",
+          "description": "Ubytování"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "region": "Jastrzębia Góra",
+      "name": "Jastrzębia Port",
+      "price": "23 690 Kč / týden",
+      "mapID": "kepataduma",
+      "imgPath": "./res/hotels/jastrzebia_port.jpg",
+      "rating": 4.75,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "breakfast-in-price",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/0/domek.jpg",
+          "description": "Zadní strana domku"
+        },
+        {
+          "src": "./hotels/res/hotels/0/herna.jpg",
+          "description": "Herna pro děti"
+        },
+        {
+          "src": "./hotels/res/hotels/0/posilovna.jpg",
+          "description": "Posilovna"
+        },
+        {
+          "src": "./hotels/res/hotels/0/restaurace.jpg",
+          "description": "Restaurace"
+        },
+        {
+          "src": "./hotels/res/hotels/0/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/0/plaz.jpg",
+          "description": "Vstup na pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/0/vybaveni.jpg",
+          "description": "Vybavení domácnosti"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "region": "Leba",
+      "name": "Villa del Mar",
+      "price": "17 223 Kč / týden",
+      "imgPath": "./res/hotels/villa_del_mar.jpg",
+      "rating": 4.55,
+      "badges": [
+        "wifi",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/1/balkon.jpg",
+          "description": "Balkón"
+        },
+        {
+          "src": "./hotels/res/hotels/1/koupelna.jpg",
+          "description": "Koupelna"
+        },
+        {
+          "src": "./hotels/res/hotels/1/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/1/loznice.jpg",
+          "description": "Ložnice"
+        },
+        {
+          "src": "./hotels/res/hotels/1/posezeni.jpg",
+          "description": "Venkovní posezení"
+        },
+        {
+          "src": "./hotels/res/hotels/1/vila.jpg",
+          "description": "Vila z přední strany"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "region": "Hel",
+      "name": "Family Hel",
+      "price": "30 292 Kč / týden",
+      "imgPath": "./res/hotels/family_hel.jpg",
+      "rating": 4.3,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "half-food-in-price",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/2/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/2/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/2/obyvaci_pokoj.jpg",
+          "description": "Obývací pokoj"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plan_ubytovani.jpg",
+          "description": "Plán ubytování"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plaz.jpg",
+          "description": "Pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/podzemni_garaz.jpg",
+          "description": "Podzemní garáž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/ubytovani.jpg",
+          "description": "Ubytování"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "region": "Jastrzębia Góra",
+      "name": "Jastrzębia Port",
+      "price": "23 690 Kč / týden",
+      "mapID": "kepataduma",
+      "imgPath": "./res/hotels/jastrzebia_port.jpg",
+      "rating": 4.75,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "breakfast-in-price",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/0/domek.jpg",
+          "description": "Zadní strana domku"
+        },
+        {
+          "src": "./hotels/res/hotels/0/herna.jpg",
+          "description": "Herna pro děti"
+        },
+        {
+          "src": "./hotels/res/hotels/0/posilovna.jpg",
+          "description": "Posilovna"
+        },
+        {
+          "src": "./hotels/res/hotels/0/restaurace.jpg",
+          "description": "Restaurace"
+        },
+        {
+          "src": "./hotels/res/hotels/0/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/0/plaz.jpg",
+          "description": "Vstup na pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/0/vybaveni.jpg",
+          "description": "Vybavení domácnosti"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "region": "Leba",
+      "name": "Villa del Mar",
+      "price": "17 223 Kč / týden",
+      "imgPath": "./res/hotels/villa_del_mar.jpg",
+      "rating": 4.55,
+      "badges": [
+        "wifi",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/1/balkon.jpg",
+          "description": "Balkón"
+        },
+        {
+          "src": "./hotels/res/hotels/1/koupelna.jpg",
+          "description": "Koupelna"
+        },
+        {
+          "src": "./hotels/res/hotels/1/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/1/loznice.jpg",
+          "description": "Ložnice"
+        },
+        {
+          "src": "./hotels/res/hotels/1/posezeni.jpg",
+          "description": "Venkovní posezení"
+        },
+        {
+          "src": "./hotels/res/hotels/1/vila.jpg",
+          "description": "Vila z přední strany"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "region": "Hel",
+      "name": "Family Hel",
+      "price": "30 292 Kč / týden",
+      "imgPath": "./res/hotels/family_hel.jpg",
+      "rating": 4.3,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "half-food-in-price",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/2/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/2/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/2/obyvaci_pokoj.jpg",
+          "description": "Obývací pokoj"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plan_ubytovani.jpg",
+          "description": "Plán ubytování"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plaz.jpg",
+          "description": "Pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/podzemni_garaz.jpg",
+          "description": "Podzemní garáž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/ubytovani.jpg",
+          "description": "Ubytování"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "region": "Jastrzębia Góra",
+      "name": "Jastrzębia Port",
+      "price": "23 690 Kč / týden",
+      "mapID": "kepataduma",
+      "imgPath": "./res/hotels/jastrzebia_port.jpg",
+      "rating": 4.75,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "breakfast-in-price",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/0/domek.jpg",
+          "description": "Zadní strana domku"
+        },
+        {
+          "src": "./hotels/res/hotels/0/herna.jpg",
+          "description": "Herna pro děti"
+        },
+        {
+          "src": "./hotels/res/hotels/0/posilovna.jpg",
+          "description": "Posilovna"
+        },
+        {
+          "src": "./hotels/res/hotels/0/restaurace.jpg",
+          "description": "Restaurace"
+        },
+        {
+          "src": "./hotels/res/hotels/0/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/0/plaz.jpg",
+          "description": "Vstup na pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/0/vybaveni.jpg",
+          "description": "Vybavení domácnosti"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "region": "Leba",
+      "name": "Villa del Mar",
+      "price": "17 223 Kč / týden",
+      "imgPath": "./res/hotels/villa_del_mar.jpg",
+      "rating": 4.55,
+      "badges": [
+        "wifi",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/1/balkon.jpg",
+          "description": "Balkón"
+        },
+        {
+          "src": "./hotels/res/hotels/1/koupelna.jpg",
+          "description": "Koupelna"
+        },
+        {
+          "src": "./hotels/res/hotels/1/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/1/loznice.jpg",
+          "description": "Ložnice"
+        },
+        {
+          "src": "./hotels/res/hotels/1/posezeni.jpg",
+          "description": "Venkovní posezení"
+        },
+        {
+          "src": "./hotels/res/hotels/1/vila.jpg",
+          "description": "Vila z přední strany"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "region": "Hel",
+      "name": "Family Hel",
+      "price": "30 292 Kč / týden",
+      "imgPath": "./res/hotels/family_hel.jpg",
+      "rating": 4.3,
+      "badges": [
+        "wifi",
+        "swimming-pool",
+        "half-food-in-price",
+        "pets",
+        "bikes"
+      ],
+      "gallery": [
+        {
+          "src": "./hotels/res/hotels/2/bazen.jpg",
+          "description": "Bazén"
+        },
+        {
+          "src": "./hotels/res/hotels/2/kuchyn.jpg",
+          "description": "Kuchyň"
+        },
+        {
+          "src": "./hotels/res/hotels/2/obyvaci_pokoj.jpg",
+          "description": "Obývací pokoj"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plan_ubytovani.jpg",
+          "description": "Plán ubytování"
+        },
+        {
+          "src": "./hotels/res/hotels/2/plaz.jpg",
+          "description": "Pláž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/podzemni_garaz.jpg",
+          "description": "Podzemní garáž"
+        },
+        {
+          "src": "./hotels/res/hotels/2/ubytovani.jpg",
+          "description": "Ubytování"
+        }
+      ]
     }
   ],
   "badges": {
