@@ -38,6 +38,13 @@
     --color_travel_card_shadow: #000000;
     --color_travel_card_border: #0000FF;
 }
+@media screen and (min-width: 1500px){
+    *{
+        --travel_card_width: 400px !important;
+        --travel_card_height: 550px !important;
+        --travel_card_name_size: 16px !important;
+    }
+}
 *{
 	--height_header: 60px;
 	--height_footer: 80px;
@@ -49,6 +56,7 @@
 	--travel_card_max_per_row: 3;
 	--travel_card_gap_width: 60px;
 	--travel_card_gap_height: 40px;
+    --travel_card_name_size: 12px;
 
     margin: 0px;
     padding: 0px;

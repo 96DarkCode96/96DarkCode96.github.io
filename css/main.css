@@ -121,7 +121,7 @@ main{
 .travel-card .travel-card-content-grid-layer{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: auto max-content;
 }
 .travel-card .travel-card-hotel-display{
 	width: 100%;
@@ -131,8 +131,10 @@ main{
 }
 .travel-card .travel-card-hotel-display h3{
 	color: #FFFFFF;
-	font-size: 17px;
+	font-size: var(--travel_card_name_size);
+	overflow: hidden;
 	height: 20px;
+	line-height: 20px;
 	padding-left: 5px;
 	padding-right: 5px;
 	margin: 5px 5px 0px 5px;

@@ -58,6 +58,7 @@ function createEmotes(wholeData, hotelData){
 
 		var img = document.createElement("img");
 		img.src = badgeList[badges[i]].img;
+        img.loading = "lazy";
 		if(badges[i].background != null){
 			img.classList.add("background-custom");
 		}
@@ -100,6 +101,7 @@ function createNextButton(hotelID){
 function createImage(imgSrc){
     var img = document.createElement("img");
     img.src = imgSrc;
+    img.loading = "lazy";
     return img;
 }
 function createStars(stars, price){
@@ -111,6 +113,7 @@ function createStars(stars, price){
     for(var i = 0; i < 5; i++){
         var star = document.createElement("img");
         star.src = "./res/star.png";
+        star.loading = "lazy";
         if(counter >= 1){
             star.classList.add("full_star");
             counter -= 1;
@@ -120,6 +123,7 @@ function createStars(stars, price){
             divStarsStars.appendChild(star);
             star = document.createElement("img");
             star.classList.add("half_empty_star");
+            star.loading = "lazy";
             star.src = "./res/half_empty_star.png";
             counter -= 0.5;
         }else{
