@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel to Poland</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .travel-packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .travel-packages {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+  </style>
+  <script>
+    function getRandomHotelName() {
+      var hotelNames = [
+        "Hotel Sunshine",
+        "Ocean View Resort",
+        "Mountain Lodge",
+        "Golden Sands Hotel",
+        "Palm Paradise",
+        "Grand Plaza",
+        "Harbor View Hotel",
+        "Royal Retreat",
+        "Island Oasis",
+        "Crystal Springs Resort",
+        "Sunset Beach Hotel",
+        "Serenity Resort",
+        "Alpine Retreat",
+        "Coral Bay Resort",
+        "Majestic Towers",
+        "Lakeside Inn",
+        "Rose Garden Hotel",
+        "Tranquil Retreat",
+        "Azure Waters Hotel",
+        "Riverside Lodge",
+        "Emerald Palms Resort",
+        "Silver Star Hotel",
+        "Tropical Breeze Resort",
+        "Evergreen Lodge",
+        "Harmony Valley Retreat",
+        "Whispering Pines Inn",
+        "Paradise Cove Hotel",
+        "Mountain View Resort",
+        "Seaside Retreat",
+        "Enchanted Gardens Hotel"
+      ];
+      var randomIndex = Math.floor(Math.random() * hotelNames.length);
+      return hotelNames[randomIndex];
+    }
+
+    function generateTravelPackages() {
+      var travelPackagesContainer = document.querySelector(".travel-packages");
+
+      for (var i = 1; i <= 20; i++) {
+        var randomHotelName = getRandomHotelName();
+        var randomStarCount = Math.floor(Math.random() * 3) + 3;
+        var randomPrice = Math.floor(Math.random() * 801) + 200;
+
+        var travelPackage = document.createElement("div");
+        travelPackage.classList.add("travel-package");
+
+        var hotelImage = document.createElement("img");
+        hotelImage.src = "hotel-" + i + ".jpg";
+        hotelImage.alt = "Hotel Image";
+        hotelImage.classList.add("hotel-image");
+        travelPackage.appendChild(hotelImage);
+
+        var travelDetails = document.createElement("div");
+        travelDetails.classList.add("travel-details");
+
+        var hotelName = document.createElement("h3");
+        hotelName.textContent = randomHotelName;
+        travelDetails.appendChild(hotelName);
+
+        var starCount = document.createElement("p");
+        starCount.innerHTML = "<strong>Star Count:</strong> " + randomStarCount + " stars";
+        travelDetails.appendChild(starCount);
+
+        var price = document.createElement("p");
+        price.innerHTML = "<strong>Price:</strong> $" + randomPrice;
+        travelDetails.appendChild(price);
+
+        var details = document.createElement("p");
+        details.textContent = "Some details about this travel package.";
+        travelDetails.appendChild(details);
+
+        var viewHotelButton = document.createElement("a");
+        viewHotelButton.href = "hotel-page.html";
+        viewHotelButton.classList.add("hotel-button");
+        viewHotelButton.textContent = "View Hotel";
+        travelDetails.appendChild(viewHotelButton);
+
+        travelPackage.appendChild(travelDetails);
+        travelPackagesContainer.appendChild(travelPackage);
+      }
+    }
+  </script>
+</head>
+<body onload="generateTravelPackages()">
+  <header>
+    <h1>Travel to Poland</h1>
+    <nav>
+      <a href="#">Travels</a>
+      <a href="#">Informations</a>
+      <a href="about/index.html">About us</a>
+      <a href="#" class="nav-button">Last Minute</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="travel-packages">
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <p>Contact us at:</p>
+      <p>Phone: 123-456-789</p>
+      <p>Email: info@example.com</p>
+    </div>
+    <div class="footer-right">
+      <p>Follow us on social media:</p>
+      <a href="#" class="social-link">Facebook</a>
+      <a href="#" class="social-link">Twitter</a>
+      <a href="#" class="social-link">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
