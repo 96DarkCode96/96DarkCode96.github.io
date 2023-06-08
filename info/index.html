@@ -1,0 +1,87 @@
+<!--
+  ~ Copyright (c) 2023 96DarkCode96.
+  -->
+
+  <!doctype html>
+  <html class="light-theme" lang="cs-CZ">
+      <head>
+          <meta charset="UTF-8">
+          <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+          <meta content="ie=edge" http-equiv="X-UA-Compatible">
+          <title>Baltic Travel - Informace</title>
+          <base href="..">
+          <link href="./res/logo.png" rel="shortcut icon" type="image/x-icon">
+          <link href="./css/header.css" rel="stylesheet">
+          <link href="./css/main.css" rel="stylesheet">
+          <link href="./css/footer.css" rel="stylesheet">
+          <link href="./css/global.css" rel="stylesheet">
+          <script src="./scripts/antileak.js"></script>
+          <script src="./scripts/jquery-3.6.4.min.js"></script>
+      </head>
+      <body>
+          <div class="pageLoader">
+              <div>
+                  <img src="./res/beach-ball.png">
+                  <h4>Načítání</h4>
+              </div>
+          </div>
+          <header>
+              <ul>
+                  <li class="logo"><a href="#"><img src="./res/logo.png"></a></li>
+                  <li class="button" style="--local_dropdown_menu_top: 1;">
+                      <a href="./last-minute/">
+                          <span>L</span><img src="./res/clock.png" style="padding: 2px"
+                                             width="25px"><span>ST MINUTE</span>
+                      </a>
+                  </li>
+                  <li class="button active" style="--local_dropdown_menu_top: 2;">
+                      <a href="./info/"><span>INF</span><img src="./res/beach-ball.png" style="padding: 2px" width="25px"><span>RMACE</span></a>
+                  </li>
+                  <li class="button" style="--local_dropdown_menu_top: 3;">
+                      <a href="./about/"><span>O NÁS</span></a>
+                  </li>
+                  <li class="button-call">
+                      <a href="tel:+420 666 666 666"><img src="./res/phone.png"><span>+420 666 666 666</span></a>
+                      <a href=""><img src="./res/facebook.png"><span>@BalticTravel</span></a>
+                  </li>
+                  <li class="menu-button">
+                      <a onclick="dropDownMenu();">
+                          <div class="menu-button-icon">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                          </div>
+                          <span>MENU</span></a>
+                  </li>
+              </ul>
+          </header>
+          <main>
+              
+          </main>
+          <footer>
+              <div class="footer-layer contact-footer">
+                  <ul>
+                      <li><a><img src="./res/telephone.png"><div><span>INFOLINKA</span><span>+420 666 666 666</span></div></a></li>
+                      <li><a><img src="./res/clock_pure.png"><div><span>PROVOZ</span><span>PO - PÁ od 8:00 - 22:00</span></div></a></li>
+                      <li><a href="/subscribe-new.php"><img src="./res/email.png"><div><span>ODBĚR</span><span>NOVINEK</span></div></a></li>
+                  </ul>
+              </div>
+              <div class="footer-layer"><div class="footer-layer-padding"></div></div>
+              <div class="footer-layer">
+                  <div class="theme-selector">
+                      <button id="light-theme-selector" onclick="setTheme('light-theme');" title="Světlý motiv"><img
+                              src="./res/check.svg"></button>
+                      <button id="dark-theme-selector" onclick="setTheme('dark-theme');" title="Tmavý motiv"><img
+                              src="./res/check.svg"></button>
+                  </div>
+              </div>
+              <div class="footer-layer"><div class="footer-layer-padding"></div></div>
+              <div class="footer-layer">
+                  <h3 class="copyright"><span>&copy; 2023, cestovní kancelář Baltic Travel s.r.o.</span></h3>
+              </div>
+          </footer>
+          <script src="./scripts/darkThemeCookies.js"></script>
+          <script src="./scripts/dropdownmenu.js"></script>
+          <script src="./scripts/loader.js"></script>
+      </body>
+  </html>

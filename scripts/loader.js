@@ -1,8 +1,16 @@
 let dir = document.querySelectorAll(".travel-cards")[0];
-
-setTimeout(reloadAllTravelData, 1000);
+document.querySelector(".pageLoader").hidePageLoader = () => {
+	let element = document.querySelectorAll(".pageLoader")[0];
+	element.style.display = "none";
+};
+document.querySelector(".pageLoader").showPageLoader = () => {
+	let element = document.querySelectorAll(".pageLoader")[0];
+	element.style.display = "flex";
+};
+reloadAllTravelData();
 
 function reloadAllTravelData(){
+    document.querySelector(".pageLoader").showPageLoader();
 	var div = document.createElement("iframe");
 	div.src = "hotels.json";
 	div.style.display = "none";
@@ -16,7 +24,7 @@ function reloadAllTravelData(){
             createTravelCard(data, data.hotels[i]);
         }
         document.body.removeChild(div);
-        hidePageLoader();
+        document.querySelector(".pageLoader").hidePageLoader();
 	});
 	document.body.appendChild(div);
 }
@@ -100,8 +108,8 @@ function createNextButton(hotelID){
 }
 function createImage(imgSrc){
     var img = document.createElement("img");
-    img.src = imgSrc;
-    img.loading = "lazy";
+    img.style.background = "#000000";
+    img.src=imgSrc;
     return img;
 }
 function createStars(stars, price){
