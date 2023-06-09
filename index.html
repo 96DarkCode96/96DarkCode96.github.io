@@ -1,103 +1,137 @@
-<!--
-  ~ Copyright (c) 2023 96DarkCode96.
-  -->
-
-<!doctype html>
-<html class="light-theme" lang="cs-CZ">
-	<head>
-		<meta charset="UTF-8">
-		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
-		<meta content="ie=edge" http-equiv="X-UA-Compatible">
-		<title>Baltic Travel</title>
-		<link href="./res/logo.png" rel="shortcut icon" type="image/x-icon">
-		<link href="./css/header.css" rel="stylesheet">
-		<link href="./css/main.css" rel="stylesheet">
-		<link href="./css/footer.css" rel="stylesheet">
-		<link href="./css/global.css" rel="stylesheet">
-		<script src="./scripts/antileak.js"></script>
-		<script src="./scripts/jquery-3.6.4.min.js"></script>
-	</head>
-	<body>
-		<div class="pageLoader">
-			<div>
-				<img src="./res/beach-ball.png">
-				<h4>Načítání</h4>
-			</div>
-		</div>
-		<header>
-			<ul>
-				<li class="logo"><a href="#"><img src="./res/logo.png"></a></li>
-				<li class="button" style="--local_dropdown_menu_top: 1;">
-					<a href="./last-minute/">
-						<span>L</span><img src="./res/clock.png" style="padding: 2px"
-						                   width="25px"><span>ST MINUTE</span>
-					</a>
-				</li>
-				<li class="button" style="--local_dropdown_menu_top: 2;">
-					<a href="./info/"><span>INF</span><img src="./res/beach-ball.png" style="padding: 2px" width="25px"><span>RMACE</span></a>
-				</li>
-				<li class="button" style="--local_dropdown_menu_top: 3;">
-					<a href="./about/"><span>O NÁS</span></a>
-				</li>
-				<li class="button-call">
-					<a href="tel:+420 666 666 666"><img src="./res/phone.png"><span>+420 666 666 666</span></a>
-					<a href=""><img src="./res/facebook.png"><span>@BalticTravel</span></a>
-				</li>
-				<li class="menu-button">
-					<a onclick="dropDownMenu();">
-						<div class="menu-button-icon">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<span>MENU</span></a>
-				</li>
-			</ul>
-		</header>
-		<main>
-			<img class="top-img" src="./res/sea.jpg">
-			<div class="main-content-gap" style="--gap_height: 20px"></div>
-			<div class="subtitle">
-				<div class="main-content-gap" style="--gap_height: 20px"></div>
-				<h1>BALTIC TRAVEL</h1>
-				<div class="main-content-gap" style="--gap_height: 20px"></div>
-				<h2 id="polsko">POLSKO</h2>
-				<div class="main-content-gap" style="--gap_height: 20px"></div>
-				<h2>LETNÍ DOVOLENÁ U BALTSKÉHO MOŘE</h2>
-				<div class="main-content-gap" style="--gap_height: 20px"></div>
-			</div>
-			<div class="main-content-gap" style="--gap_height: 50px"></div>
-			<div class="subtitle-small">
-				<h2>ŽHAVÉ TIPY PRO VÁS</h2>
-			</div>
-			<div class="main-content-gap" style="--gap_height: 50px"></div>
-			<div class="travel-cards"></div>
-			<div class="main-content-gap" style="--gap_height: 100px"></div>
-		</main>
-		<footer>
-			<div class="footer-layer contact-footer">
-				<ul>
-					<li><a><img src="./res/telephone.png"><div><span>INFOLINKA</span><span>+420 666 666 666</span></div></a></li>
-					<li><a><img src="./res/clock_pure.png"><div><span>PROVOZ</span><span>PO - PÁ od 8:00 - 22:00</span></div></a></li>
-					<li><a href="/subscribe-new.php"><img src="./res/email.png"><div><span>ODBĚR</span><span>NOVINEK</span></div></a></li>
-				</ul>
-			</div>
-			<div class="footer-layer"><div class="footer-layer-padding"></div></div>
-			<div class="footer-layer">
-				<div class="theme-selector">
-					<button id="light-theme-selector" onclick="setTheme('light-theme');" title="Světlý motiv"><img
-							src="./res/check.svg"></button>
-					<button id="dark-theme-selector" onclick="setTheme('dark-theme');" title="Tmavý motiv"><img
-							src="./res/check.svg"></button>
-				</div>
-			</div>
-			<div class="footer-layer"><div class="footer-layer-padding"></div></div>
-			<div class="footer-layer">
-				<h3 class="copyright"><span>&copy; 2023, cestovní kancelář Baltic Travel s.r.o.</span></h3>
-			</div>
-		</footer>
-		<script src="./scripts/darkThemeCookies.js"></script>
-		<script src="./scripts/dropdownmenu.js"></script>
-		<script src="./scripts/loader.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vyhledávání</title>
+    <link href="../res/logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        html{
+            min-width: 350px;
+        }
+        #errorCode{
+            font-family: 'Roboto Slab', serif;
+            width: 100%;
+            text-align: center;
+            font-size: 130px;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-shadow: 1px 1px #000;
+            z-index: 3;
+        }
+        .top-img{
+            position: absolute;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .top-img-cover{
+            position: absolute;
+            z-index: 2;
+            width: 100vw;
+            height: 100vh;
+            background: #444;
+            opacity: 0.6;
+        }
+        .input-redirect{
+            position: absolute;
+            top: 46%;
+            width: 90%;
+            max-width: 1000px;
+            min-width: 200px;
+            height: 8%;
+            min-height: 76px;
+            background: #FFF;
+            border-radius: 40px;
+            justify-self: center;
+            align-self: center;
+            z-index: 3;
+            display: inline-block;
+        }
+        .input-redirect input{
+            color: #555;
+            text-align: center;
+            font-family: 'Roboto Slab', serif;
+            width: calc(100% - 20px);
+            height: 100%;
+            outline: none;
+            padding-right: 10px;
+            border-radius: 40px;
+            overflow-x:auto;
+            background: none !important;
+            border: none !important;
+            font-size: 40px;
+        }
+        .input-redirect img{
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            position: relative;
+            top: calc(-100% + (100% - 60px)/2);
+            left: calc(100% - 60px - 20px);
+        }
+        .input-redirect img:hover{
+            opacity: 0.5;
+        }
+        .link-home{
+            z-index: 10;
+            display: flex;
+            width: min-content;
+            border-radius: 50%;
+            background: #FFF;
+            padding: 10px;
+            min-width: unset !important;
+            margin: 10px;
+            color: #AAA;
+            height: min-content;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-family: 'Roboto Slab', serif;
+            cursor: pointer;
+            user-select: none;
+        }
+        .link-home img{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: -2px;
+        }
+    </style>
+</head>
+<body>
+    <img class="top-img" src="../res/sea.jpg">
+    <div class="top-img-cover"></div>
+    <a class="link-home" href="./last-minute/"><img src="./home.png"></a>
+    <div class="input-redirect">
+        <input type="text" name="r" id="r" placeholder="Jastrzębia Góra">
+        <img src="./search.png" alt="Search" id="search">
+    </div>
+    <script>
+        document.querySelector(".input-redirect input").addEventListener('keyup', function (e) {
+            if (e.key === 'Enter' || e.keyCode === 13) {
+                var val = document.querySelector(".input-redirect input").value;
+                val = val.trim();
+                if(val == null || val == ""){
+                    return;
+                }
+                window.location.href = "./search/?q=" + val;
+            }
+        });
+        document.querySelector(".input-redirect img").addEventListener("click", function (e) {
+            var val = document.querySelector(".input-redirect input").value;
+            val = val.trim();
+            if(val == null || val == ""){
+                return;
+            }
+            window.location.href = "./search/?q=" + val;
+        });
+    </script>
+</body>
 </html>

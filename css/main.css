@@ -204,11 +204,8 @@ main{
 .travel-card-status-display div img{
 	width: 30px;
 	margin-left: 10px;
-}
-.travel-card-status-display div img.background-custom{
 	background: #FFFFFF;
 	border-radius: 20px;
-	width: 26px;
 	padding: 2px;
 }
 .travel-card-status-display div h3{

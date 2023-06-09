@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Výsledek vyhledávání</title>
+    <base href="../">
+    <link href="../res/logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/css/global.css">
+    <style>
+        html{
+            min-width: 350px;
+        }
+        #errorCode{
+            font-family: 'Roboto Slab', serif;
+            width: 100%;
+            text-align: center;
+            font-size: 130px;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-shadow: 1px 1px #000;
+            z-index: 3;
+        }
+        .top-img{
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .top-img-cover{
+            position: fixed;
+            z-index: 2;
+            width: 100vw;
+            height: 100vh;
+            background: #444;
+            opacity: 0.6;
+        }
+        .input-redirect{
+            position: fixed;
+            top: 10px;
+            width: 90%;
+            max-width: 1000px;
+            min-width: 200px;
+            height: 8%;
+            min-height: 76px;
+            background: #FFF;
+            border-radius: 40px;
+            justify-self: center;
+            align-self: center;
+            z-index: 10;
+            border: 2px #AAA solid;
+            display: inline-block;
+        }
+        .input-redirect input{
+            color: #555;
+            text-align: center;
+            font-family: 'Roboto Slab', serif;
+            width: calc(100% - 20px);
+            height: 100%;
+            outline: none;
+            padding-right: 10px;
+            border-radius: 40px;
+            overflow-x:auto;
+            background: none !important;
+            border: none !important;
+            font-size: 40px;
+        }
+        .input-redirect img{
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            position: relative;
+            top: calc(-100% + (100% - 60px)/2);
+            left: calc(100% - 60px - 20px);
+        }
+        .input-redirect img:hover{
+            opacity: 0.5;
+        }
+        .link-home{
+            z-index: 10;
+            display: flex;
+            width: min-content;
+            border-radius: 50%;
+            background: #FFF;
+            padding: 10px;
+            min-width: unset !important;
+            margin: 10px;
+            color: #AAA;
+            height: min-content;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-family: 'Roboto Slab', serif;
+            cursor: pointer;
+            user-select: none;
+            position: fixed;
+        }
+        .link-home img{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: -2px;
+        }
+        .data-layout{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+        .filtered-data{
+            position: absolute;
+            top: 140px;
+            width: 90%;
+            max-width: 1000px;
+            min-width: 200px;
+            height: auto;
+            min-height: 76px;
+            justify-self: center;
+            align-self: center;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+        }
+        .filtered-data > div{
+            width: 100%;
+            z-index: 4;
+            border-radius: 40px;
+            background: #FFF;
+            min-height: 76px;
+            display: flex;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+        .filtered-data > div:last-child{
+            margin-bottom: 20px;
+        }
+        .filtered-data div h3 {
+            font-size: 25px;
+            margin-top: 10px;
+            margin-left: 30px;
+            font-family: 'Roboto Slab', serif;
+            color: #444;
+        }
+        .filtered-data div h4 {
+            font-size: 20px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            font-family: 'Roboto Slab', serif;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="pageLoader">
+        <div>
+            <img src="./res/beach-ball.png">
+            <h4>Načítání</h4>
+        </div>
+    </div>
+    <img class="top-img" src="../res/sea.jpg">
+    <div class="top-img-cover"></div>
+    <a class="link-home" href="./last-minute/"><img src="./home.png"></a>
+    <div class="data-layout">
+        <div class="input-redirect">
+            <input type="text" name="r" id="r" placeholder="Jastrzębia Góra">
+            <img src="./search.png" alt="Search" id="search">
+        </div>
+        <div class="filtered-data">
+
+        </div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const cont = urlParams.get('q');
+        document.querySelector(".input-redirect input").value = cont;
+        document.querySelector(".input-redirect input").addEventListener('keyup', function (e) {
+            if (e.key === 'Enter' || e.keyCode === 13) {
+                var val = document.querySelector(".input-redirect input").value;
+                val = val.trim();
+                if(val == null || val == ""){
+                    return;
+                }
+                window.location.href = "./search/?q=" + val;
+            }else{
+                rel(document.querySelector(".input-redirect input").value);
+            }
+        });
+        document.querySelector(".input-redirect img").addEventListener("click", function (e) {
+            var val = document.querySelector(".input-redirect input").value;
+            val = val.trim();
+            if(val == null || val == ""){
+                return;
+            }
+            window.location.href = "./search/?q=" + val;
+        });
+        rel(cont);
+        let element = document.querySelectorAll(".pageLoader")[0];
+        element.style.display = "flex";
+        function rel(content) {
+            var tokens = content
+                  .toLowerCase()
+                  .split(' ')
+                  .filter(function(token){
+                    return token.trim() !== '';
+                  });
+            if(tokens.length) {
+                var searchTermRegex = new RegExp(tokens.join('|'), 'gim');
+                var div = document.createElement("iframe");
+                div.src = "hotels.json";
+                div.style.display = "none";
+                div.onload = (function(){
+                    const data = JSON.parse(div.contentWindow.document.body.querySelectorAll("pre")[0].innerHTML);
+                    var filteredList = data.hotels.filter(function(hot){
+                        return (hot["region"] + " " + hot["name"]).match(searchTermRegex);
+                    });
+                    var divIDK = document.querySelector(".filtered-data");
+                    divIDK.innerHTML = "";
+                    filteredList.forEach(el => {
+                        var elDIV = document.createElement("div");
+                        var elNAME = document.createElement("h3");
+                        var elREG = document.createElement("h4");
+                        elNAME.innerText = el["name"];
+                        elREG.innerText = el["region"];
+
+                        elDIV.appendChild(elNAME);
+                        elDIV.appendChild(elREG);
+                        divIDK.appendChild(elDIV);
+                    });
+                    document.body.removeChild(div);
+                    element.style.display = "none";
+                });
+                document.body.appendChild(div);
+            }
+        }
+        function setTheme(value) {
+            const d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            let expires = "expires="+d.toUTCString();
+            document.cookie = "theme=" + value + ";" + expires + ";path=/";
+            localStorage.setItem("theme", value);
+            checkTheme();
+        }
+
+        function getTheme() {
+            let name = "theme=";
+            let ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkTheme() {
+            let theme = getTheme();
+            let html = document.querySelectorAll("html")[0];
+            if (theme == "") {
+                theme = localStorage.getItem("theme");
+                if(theme == "" || theme == null){
+                    theme = "light-theme";
+                }
+            }
+            html.className = theme;
+        }
+        checkTheme();
+    </script>
+</body>
+</html>

@@ -4,7 +4,14 @@ if(!queryParams.has("hotelID")){
 }else{
 	setTimeout(loadHotel, 1000);
 }
-
+document.querySelector(".pageLoader").hidePageLoader = () => {
+	let element = document.querySelectorAll(".pageLoader")[0];
+	element.style.display = "none";
+};
+document.querySelector(".pageLoader").showPageLoader = () => {
+	let element = document.querySelectorAll(".pageLoader")[0];
+	element.style.display = "flex";
+};
 function loadHotel(){
 	let hotelID = queryParams.get("hotelID");
 	var div = document.createElement("iframe");
@@ -23,7 +30,7 @@ function loadHotel(){
         }
 
         document.body.removeChild(div);
-        hidePageLoader();
+        document.querySelector(".pageLoader").hidePageLoader();
     });
     document.body.appendChild(div);
 }
