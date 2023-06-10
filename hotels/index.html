@@ -18,7 +18,6 @@
 		<link href="./css/footer.css" rel="stylesheet">
 		<link href="./css/global.css" rel="stylesheet">
 		<script src="./scripts/antileak.js"></script>
-		<script src="./scripts/jquery-3.6.4.min.js"></script>
 	</head>
 	<body>
 		<div class="pageLoader">
@@ -61,7 +60,7 @@
 			<div class="hotelContent">
 				<img style="width: 100%; height: 45px; object-fit: cover; position: absolute; z-index: -1;" src="./res/sea.jpg">
 				<ul class="hotelContentSelector">
-					<li id="selector-obecne" style="display: none;" class="active" onclick="switchObecneInformace()">OBECNÉ INFORMACE</li>
+					<li id="selector-obecne" class="active" onclick="switchObecneInformace()">OBECNÉ INFORMACE</li>
 					<li id="selector-galerie" onclick="switchGalerie()">GALERIE</li>
 				</ul>
 				<div class="hotelData visible">
@@ -118,8 +117,5 @@
 		<script src="./scripts/dropdownmenu.js"></script>
 		<script src="./hotels/scripts/loader.js"></script>
 		<script src="./hotels/scripts/gallery.js"></script>
-		<script>
-			switchGalerie();
-		</script>
 	</body>
 </html>

@@ -24,8 +24,8 @@ function loadHotel(){
         });
 
         if(data.length == 0){
-            unknownHotel();
-        }else{
+			window.location.href = "/";
+		}else{
             loadHotelData(data[0]);
         }
 
@@ -35,42 +35,9 @@ function loadHotel(){
     document.body.appendChild(div);
 }
 
-function unknownHotel(){
-	let container = document.createElement("div");
-	let innerContainer = document.createElement("div");
-
-	let errorCode = document.createElement("h1");
-	let errorMsg = document.createElement("h2");
-	let errorMsgContent = document.createElement("h3");
-	let errorHelp = document.createElement("h4");
-
-	errorCode.innerText = "404";
-	errorMsg.innerText = "ERROR";
-	errorMsgContent.innerText = "STRÁNKA NENALEZENA";
-	errorHelp.innerText = "ZADAL/A JSTE ŠPATNOU URL ADRESU HOTELU";
-
-	innerContainer.appendChild(errorCode);
-	innerContainer.appendChild(errorMsg);
-	innerContainer.appendChild(errorMsgContent);
-	innerContainer.appendChild(errorHelp);
-
-	container.classList.add("errorCode");
-	container.appendChild(innerContainer);
-	document.body.querySelectorAll("main")[0].appendChild(container);
-}
-
 function loadHotelData(hotelData){
 	createHotelData(hotelData);
 	createHotelGallery(hotelData.gallery);
-}
-
-function loadHotelMap(hotelMapID){
-	var iframe = document.createElement("iframe");
-	iframe.classList.add("hotelMap");
-	iframe.src = "https://frame.mapy.cz/s/" + hotelMapID;
-	iframe.frameborder = "0";
-	iframe.style.border = "none";
-	return iframe;
 }
 
 function createHotelData(hotelData){
