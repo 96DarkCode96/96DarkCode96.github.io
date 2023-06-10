@@ -197,6 +197,9 @@
         </div>
     </div>
     <script>
+        var data;
+        var searchTermRegex;
+        var divIDK;
         const urlParams = new URLSearchParams(window.location.search);
         var cont = urlParams.get('q');
         if(cont == null){
@@ -233,63 +236,22 @@
                   .filter(function(token){
                     return token.trim() !== '';
                   });
-            var divIDK = document.querySelector(".filtered-data");
+            divIDK = document.querySelector(".filtered-data");
             if(tokens.length) {
-                var searchTermRegex = new RegExp(tokens.join('|'), 'gim');
-                var div = document.createElement("iframe");
-                div.src = "hotels.json";
-                div.style.display = "none";
-                var getPerc = (val, regex) => {
-                    var vals = val.toLowerCase().split(' ').filter((token) => token.trim() !== '');
-                    if(!vals.length){
-                        return 0.0;
-                    }
-                    var perc = 0.0;
-                    vals.forEach((v) => {
-                        perc += (v.match(regex) ? 1 : 0);
+                searchTermRegex = new RegExp(tokens.join('|'), 'gim');
+                if(data == null){
+                    var div = document.createElement("iframe");
+                    div.src = "hotels.json";
+                    div.style.display = "none";
+                    div.onload = (function(){
+                        data = JSON.parse(div.contentWindow.document.body.querySelectorAll("pre")[0].innerHTML);
+                        datLoad();
+                        document.body.removeChild(div);
                     });
-                    return perc / vals.length;
+                    document.body.appendChild(div);
+                }else{
+                    datLoad();
                 }
-                div.onload = (function(){
-                    const data = JSON.parse(div.contentWindow.document.body.querySelectorAll("pre")[0].innerHTML);
-                    var filteredList = data.hotels.filter(function(hot){
-                        return (hot["region"] + " " + hot["name"]).match(searchTermRegex);
-                    }).sort((a, b) => {
-                        var mA = getPerc(a["region"], searchTermRegex) + getPerc(a["name"], searchTermRegex);
-                        var mB = getPerc(b["region"], searchTermRegex) + getPerc(b["name"], searchTermRegex);
-                        return mA > mB ? -1 : (mA == mB ? 0 : 1);
-                    });
-                    divIDK.innerHTML = "";
-                    if(filteredList.length){
-                        filteredList.forEach(el => {
-                            var elDIV = document.createElement("div");
-                            var elNAME = document.createElement("h3");
-                            var elREG = document.createElement("h4");
-                            elNAME.innerText = el["name"];
-                            elREG.innerText = el["region"];
-
-                            elDIV.appendChild(elNAME);
-                            elDIV.appendChild(elREG);
-                            elDIV.addEventListener("click", (e) => {
-                                window.location.href = "/hotels/?hotelID=" + el["id"];
-                            });
-                            divIDK.appendChild(elDIV);
-                        });
-                    }else{
-                        var elDIV = document.createElement("div");
-                        var elNAME = document.createElement("h3");
-                        var elREG = document.createElement("h4");
-                        elNAME.innerText = "Parametrům neodpovídá žádný hotel";
-                        elREG.innerText = "Zkuste změnit parametry vyhledání";
-
-                        elDIV.appendChild(elNAME);
-                        elDIV.appendChild(elREG);
-                        divIDK.appendChild(elDIV);
-                    }
-                    document.body.removeChild(div);
-                    element.style.display = "none";
-                });
-                document.body.appendChild(div);
             }else{
                 divIDK.innerHTML = "";
                 var elDIV = document.createElement("div");
@@ -305,6 +267,54 @@
                 let element = document.querySelectorAll(".pageLoader")[0];
                 element.style.display = "none";
             }
+        }
+        function datLoad(){
+            var getPerc = (val, regex) => {
+                var vals = val.toLowerCase().split(' ').filter((token) => token.trim() !== '');
+                if(!vals.length){
+                    return 0.0;
+                }
+                var perc = 0.0;
+                vals.forEach((v) => {
+                    perc += (v.match(regex) ? 1 : 0);
+                });
+                return perc / vals.length;
+            }
+            var filteredList = data.hotels.filter(function(hot){
+                return (hot["region"] + " " + hot["name"]).match(searchTermRegex);
+            }).sort((a, b) => {
+                var mA = getPerc(a["region"], searchTermRegex) + getPerc(a["name"], searchTermRegex);
+                var mB = getPerc(b["region"], searchTermRegex) + getPerc(b["name"], searchTermRegex);
+                return mA > mB ? -1 : (mA == mB ? 0 : 1);
+            });
+            divIDK.innerHTML = "";
+            if(filteredList.length){
+                filteredList.forEach(el => {
+                    var elDIV = document.createElement("div");
+                    var elNAME = document.createElement("h3");
+                    var elREG = document.createElement("h4");
+                    elNAME.innerText = el["name"];
+                    elREG.innerText = el["region"];
+
+                    elDIV.appendChild(elNAME);
+                    elDIV.appendChild(elREG);
+                    elDIV.addEventListener("click", (e) => {
+                        window.location.href = "/hotels/?hotelID=" + el["id"];
+                    });
+                    divIDK.appendChild(elDIV);
+                });
+            }else{
+                var elDIV = document.createElement("div");
+                var elNAME = document.createElement("h3");
+                var elREG = document.createElement("h4");
+                elNAME.innerText = "Parametrům neodpovídá žádný hotel";
+                elREG.innerText = "Zkuste změnit parametry vyhledání";
+
+                elDIV.appendChild(elNAME);
+                elDIV.appendChild(elREG);
+                divIDK.appendChild(elDIV);
+            }
+            element.style.display = "none";
         }
         function setTheme(value) {
             const d = new Date();
