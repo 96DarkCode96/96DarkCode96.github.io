@@ -1,23 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap');
 .light-theme{
-	--color_errorCodeBG: #FFFFFF;
-	--color_errorCode: #050A30;
-	--colorBorderImage: #000000;
-	--filterInvert: 0;
-	--color_galleryStatus: #000000;
-	--color_bg: #FFFFFF;
+	--color_fragment_bg: #555566AA;
+	--color_selector_bg_active: #FFF;
 }
 .dark-theme{
-	--color_errorCodeBG: #1F1F1F;
-	--color_errorCode: #FFFFFF;
-	--colorBorderImage: #FFFFFF;
-	--filterInvert: 1;
-	--color_galleryStatus: #FFFFFF;
-	--color_bg: #1F1F1F;
-}
-
-main {
-	background: var(--color_errorCodeBG);
+	--color_fragment_bg: #555566AA;
+	--color_selector_bg_active: #DDD;
 }
 
 .hotelContent{
@@ -167,7 +155,7 @@ main {
 .hotelContentFragment{
 	width: 100%;
 	flex: 1;
-	background: #55FFFFFF;
+	background: var(--color_fragment_bg);
 }
 .hotelContentSelector{
 	height: 100%;
@@ -192,7 +180,7 @@ main {
 	transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .hotelContentSelector li.active{
-	background: #FFFFFF;
+	background: var(--color_selector_bg_active);
 	color: #000000;
 	transform: translateX(5px);
 }
