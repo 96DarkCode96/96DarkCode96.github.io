@@ -21,16 +21,15 @@ main {
 }
 
 .hotelContent{
+	display: flex;
+	flex-direction: row;
 	z-index: 3;
 	flex: 1;
-	background: var(--color_bg);
 }
 
 .hotelGallery{
-	margin: 30px auto;
 	display: grid;
 	justify-content: center;
-	max-width: 800px;
 	grid-template-columns: repeat(auto-fill, 220px);
 	grid-gap: 20px 20px;
 	place-items: center;
@@ -56,7 +55,7 @@ main {
     width: 100%;
     height: 100%;
 
-    z-index: 999;
+    z-index: 9999;
 
     overflow: hidden;
     position: fixed;
@@ -87,6 +86,7 @@ main {
 }
 
 .hotelGalleryView-img{
+	z-index: 9999;
 	position: relative;
 	display: block;
     width: auto;
@@ -164,35 +164,40 @@ main {
     	height: 50px;
     }
 }
-
-.hotelContentSelector{
+.hotelContentFragment{
 	width: 100%;
-	margin-top: 0px;
-	justify-content: center;
+	flex: 1;
+	background: #55FFFFFF;
+}
+.hotelContentSelector{
+	height: 100%;
+	border-right: 10px var(--color_header) solid;
 	list-style-type: none;
 	display: flex;
-	flex-direction: row;
-	border-bottom: 1px solid #000000;
+	flex-direction: column;
 }
 .hotelContentSelector li{
 	overflow: hidden;
 	display: block;
 	color: #FFFFFF;
+	font-size: 20px;
+	max-width: 135px;
+	letter-spacing: 2px;
+	font-family: 'Roboto Slab', serif;
 	padding: 10px;
 	margin: 5px;
-	border-top: 1px solid #000000;
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-bottom: 1px solid #00AA00;
-	background: #00AA00;
+	background: var(--color_header);
 	cursor: pointer;
-	border-radius: 10px 10px 0px 0px;
 	margin-bottom: -1px;
+	transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .hotelContentSelector li.active{
 	background: #FFFFFF;
-	border-bottom: 1px solid #FFFFFF;
 	color: #000000;
+	transform: translateX(5px);
+}
+.hotelContentSelector li:hover{
+	opacity: 0.8;
 }
 
 .hotelData.invisible{

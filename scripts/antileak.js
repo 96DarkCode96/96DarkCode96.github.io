@@ -1,5 +1,5 @@
 document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
+    //e.preventDefault();
 }, false);
 document.addEventListener("keydown", (e) => {
 	if (e.ctrlKey || e.keyCode==123) {
