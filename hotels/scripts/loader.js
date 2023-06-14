@@ -30,6 +30,7 @@ function loadHotel(){
         }
 
         document.body.removeChild(div);
+        document.querySelector(".hotelData").classList.remove("fakeHide");
         document.querySelector(".pageLoader").hidePageLoader();
     });
     document.body.appendChild(div);
@@ -41,9 +42,38 @@ function loadHotelData(hotelData){
 }
 
 function createHotelData(hotelData){
-
+	document.querySelector("#hotel-name").innerHTML = hotelData["name"];
+	document.querySelector("#hotel-destination").innerHTML = hotelData["region"];
+	document.querySelector("#hotel-image").src = hotelData["imgPath"];
+	document.querySelector("#hotel-price").innerHTML = hotelData["price"] + "<span>za týden</span>";
+	var rating = 0.0;
+	let d = document.querySelector(".hotelData-rating-users");
+	if(hotelData["rating"].length){
+		for(var i = 0; i < hotelData["rating"].length; i++){
+			var dat = hotelData["rating"][i];
+			rating = parseFloat(rating) + parseFloat(dat["rating"]);
+			if(i <= 14){
+				var el = document.createElement("p");	
+				el.innerHTML = dat["name"] + "<span>" + dat["rating"] + "</span>";
+				d.appendChild(el);
+			}
+			if(i == 14){
+				var el = document.createElement("p");
+				el.innerHTML = "...";
+				d.appendChild(el);
+			}
+		}
+		rating = rating / hotelData["rating"].length;
+		document.querySelector("#hotel-rating").innerHTML = toFixedIfNecessary(rating, 2) + "<span>/5</span>";
+	}else{
+		document.querySelector("#hotel-rating").innerHTML = "?<span>/5</span>";
+		document.querySelector(".hotelData-rating-div").style.background = "none";
+	}
+	d = undefined;
 }
-
+function toFixedIfNecessary( value, dp ){
+	return +parseFloat(value).toFixed( dp );
+}
 function createHotelGallery(gallery){
 	if(gallery == null || gallery.length == 0){
 		return;

@@ -28,7 +28,7 @@
 		</div>
 		<header>
 			<ul>
-				<li class="logo"><a href="#"><img src="./res/logo.png"></a></li>
+				<li class="logo"><a><img src="./res/logo.png"></a></li>
 				<li class="button" style="--local_dropdown_menu_top: 1;">
 					<a href="./last-minute/">
 						<span>L</span><img src="./res/clock.png" style="padding: 2px"
@@ -36,10 +36,10 @@
 					</a>
 				</li>
 				<li class="button" style="--local_dropdown_menu_top: 2;">
-					<a href="./info/"><span>INF</span><img src="./res/beach-ball.png" style="padding: 2px" width="25px"><span>RMACE</span></a>
+					<a href="./about/"><img src="./res/beach-ball.png" style="padding: 2px" width="25px"><span>NÁS</span></a>
 				</li>
 				<li class="button" style="--local_dropdown_menu_top: 3;">
-					<a href="./about/"><span>O NÁS</span></a>
+					<a href="#"><span>VYHLEDÁVÁNÍ</span></a>
 				</li>
 				<li class="button-call">
 					<a href="tel:+420 666 666 666"><img src="./res/phone.png"><span>+420 666 666 666</span></a>
@@ -57,14 +57,35 @@
 			</ul>
 		</header>
 		<main>
-			<img style="width: 100vw; height: 100vh; object-fit: cover; position: fixed; z-index: 0;" src="./res/sea.jpg">
+			<img style="width: 100vw; height: 100vh; object-fit: cover; position: fixed; z-index: 0; filter: brightness(var(--sea_brightness))" src="./res/sea.jpg">
 			<div class="hotelContent">
 				<ul class="hotelContentSelector">
 					<li id="selector-obecne" class="active" onclick="switchObecneInformace()">OBECNÉ INFORMACE</li>
 					<li id="selector-galerie" onclick="switchGalerie()">GALERIE</li>
 				</ul>
-				<div class="hotelData hotelContentFragment">
-					<h2 class="hotelData-name" style="color: #000000; width: 100%; text-align: center; margin-top: 50px;">Příprava na další pokračování...</h2>
+				<div class="hotelData hotelContentFragment fakeHide">
+					<div class="hotelData-segment" style="grid-area: a">
+						<img id="hotel-image" src="../res/hotels/20.jpg">
+					</div>
+					<div class="hotelData-segment" style="grid-area: b; width: calc(100% - 40px);">
+						<h2 id="hotel-name">Hotel Name</h2>
+						<h4 id="hotel-destination">Hotel Dest</h2>
+					</div>
+					<div class="hotelData-segment hotelData-price-div" style="grid-area: e;">
+						<h2 id="hotel-price">00000 Kč / týden</h2>
+					</div>
+					<div class="hotelData-segment hotelData-rating-div" style="grid-area: c;">
+						<h2 id="hotel-rating">5.0</h2>
+						<div class="hotelData-rating-users">
+							
+						</div>
+					</div>
+					<div class="hotelData-segment hotelData-about-div" style="grid-area: d">
+						
+					</div>
+					<div class="hotelData-segment hotelData-mid-spacer" style="grid-area: spacer">
+						<img src="../res/logo.png">
+					</div>
 				</div>
 				<div class="hotelGallery invisible hotelContentFragment"></div>
 				<div class="hotelGalleryViewBlur"></div>

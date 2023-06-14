@@ -4,10 +4,90 @@
       "id": 0,
       "region": "Jastrzębia Góra",
       "name": "Jastrzębia Port",
-      "price": "23 690 Kč / týden",
-      "mapID": "kepataduma",
+      "price": "23 690 Kč",
       "imgPath": "./res/hotels/jastrzebia_port.jpg",
-      "rating": 4.75,
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
@@ -49,7 +129,7 @@
       "id": 1,
       "region": "Leba",
       "name": "Villa del Mar",
-      "price": "17 223 Kč / týden",
+      "price": "17 223 Kč",
       "imgPath": "./res/hotels/villa_del_mar.jpg",
       "rating": 4.55,
       "badges": [
@@ -88,7 +168,7 @@
       "id": 2,
       "region": "Hel",
       "name": "Family Hel",
-      "price": "30 292 Kč / týden",
+      "price": "30 292 Kč",
       "imgPath": "./res/hotels/family_hel.jpg",
       "rating": 4.3,
       "badges": [
@@ -133,8 +213,7 @@
       "id": 3,
       "region": "Krakow",
       "name": "Radisson Blu",
-      "price": "23 030 Kč / týden",
-      "mapID": "kepataduma",
+      "price": "23 030 Kč",
       "imgPath": "./res/hotels/atlantica_mikri_poli.jpg",
       "rating": 4.05,
       "badges": [
@@ -178,7 +257,7 @@
       "id": 4,
       "region": "Krakow",
       "name": "The Bonerowski Palace",
-      "price": "25 223 Kč / týden",
+      "price": "25 223 Kč",
       "imgPath": "./res/hotels/belvedere.jpg",
       "rating": 3.1,
       "badges": [
@@ -217,7 +296,7 @@
       "id": 5,
       "region": "Krakow",
       "name": "Sheraton Grand",
-      "price": "27 292 Kč / týden",
+      "price": "27 292 Kč",
       "imgPath": "./res/hotels/hermes.jpg",
       "rating": 4.4,
       "badges": [
@@ -262,8 +341,7 @@
       "id": 6,
       "region": "Krakow",
       "name": "Hotel Copernicus",
-      "price": "10 323 Kč / týden",
-      "mapID": "kepataduma",
+      "price": "10 323 Kč",
       "imgPath": "./res/hotels/Random-House-image-1.jpg",
       "rating": 2.60,
       "badges": [
@@ -307,7 +385,7 @@
       "id": 7,
       "region": "Krakow",
       "name": "PURO Krakow Stare Miasto",
-      "price": "18 253 Kč / týden",
+      "price": "18 253 Kč",
       "imgPath": "./res/hotels/Random-House-image-2.jpg",
       "rating": 4.55,
       "badges": [
@@ -346,7 +424,7 @@
       "id": 8,
       "region": "Warsaw",
       "name": "Hotel Bristol",
-      "price": "30 292 Kč / týden",
+      "price": "30 292 Kč",
       "imgPath": "./res/hotels/Random-House-image-3.jpg",
       "rating": 4.3,
       "badges": [
@@ -391,8 +469,7 @@
       "id": 9,
       "region": "Warsaw",
       "name": "H15 Boutique Hotel",
-      "price": "23 690 Kč / týden",
-      "mapID": "kepataduma",
+      "price": "23 690 Kč",
       "imgPath": "./res/hotels/Random-House-image-4.jpg",
       "rating": 4.75,
       "badges": [
@@ -436,7 +513,7 @@
       "id": 10,
       "region": "Warsaw",
       "name": "Sofitel Victoria Warsaw",
-      "price": "17 223 Kč / týden",
+      "price": "17 223 Kč",
       "imgPath": "./res/hotels/10.jpg",
       "rating": 4.51,
       "badges": [
@@ -475,7 +552,7 @@
       "id": 11,
       "region": "Warsaw",
       "name": "Raffles Europejski",
-      "price": "30 520 Kč / týden",
+      "price": "30 520 Kč",
       "imgPath": "./res/hotels/11.jpg",
       "rating": 4.27,
       "badges": [
@@ -520,8 +597,7 @@
       "id": 12,
       "region": "Warsaw",
       "name": "Nobu Hotel",
-      "price": "22 900 Kč / týden",
-      "mapID": "kepataduma",
+      "price": "22 900 Kč",
       "imgPath": "./res/hotels/12.jpg",
       "rating": 4.75,
       "badges": [
@@ -565,7 +641,7 @@
       "id": 13,
       "region": "Warsaw",
       "name": "InterContinental",
-      "price": "16 302 Kč / týden",
+      "price": "16 302 Kč",
       "imgPath": "./res/hotels/13.jpg",
       "rating": 4.79,
       "badges": [
@@ -604,7 +680,7 @@
       "id": 14,
       "region": "Gdansk",
       "name": "Gdańsk Boutique",
-      "price": "34 261 Kč / týden",
+      "price": "34 261 Kč",
       "imgPath": "./res/hotels/14.jpg",
       "rating": 4.8,
       "badges": [
@@ -649,8 +725,7 @@
       "id": 15,
       "region": "Gdansk",
       "name": "Hotel Podewils",
-      "price": "14 390 Kč / týden",
-      "mapID": "kepataduma",
+      "price": "14 390 Kč",
       "imgPath": "./res/hotels/15.jpg",
       "rating": 3.3,
       "badges": [
@@ -694,7 +769,7 @@
       "id": 16,
       "region": "Gdansk",
       "name": "Dwór Oliwski",
-      "price": "15 730 Kč / týden",
+      "price": "15 730 Kč",
       "imgPath": "./res/hotels/16.jpg",
       "rating": 4.43,
       "badges": [
@@ -733,7 +808,7 @@
       "id": 17,
       "region": "Gdansk",
       "name": "PURO Hotel Gdańsk Stare Miasto",
-      "price": "27 554 Kč / týden",
+      "price": "27 554 Kč",
       "imgPath": "./res/hotels/17.jpg",
       "rating": 3.98,
       "badges": [
@@ -778,8 +853,7 @@
       "id": 18,
       "region": "Gdansk",
       "name": "IBB Hotel Długi Targ",
-      "price": "23 800 Kč / týden",
-      "mapID": "kepataduma",
+      "price": "23 800 Kč",
       "imgPath": "./res/hotels/18.jpg",
       "rating": 4.34,
       "badges": [
@@ -823,7 +897,7 @@
       "id": 19,
       "region": "Gdansk",
       "name": "Hilton Gdansk",
-      "price": "18 023 Kč / týden",
+      "price": "18 023 Kč",
       "imgPath": "./res/hotels/19.jpg",
       "rating": 4.56,
       "badges": [
@@ -862,7 +936,7 @@
       "id": 20,
       "region": "Gdansk",
       "name": "Dwór Oliwski City Hotel",
-      "price": "31 393 Kč / týden",
+      "price": "31 393 Kč",
       "imgPath": "./res/hotels/20.jpg",
       "rating": 4.45,
       "badges": [
