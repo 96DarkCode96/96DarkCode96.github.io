@@ -6,6 +6,7 @@
       "name": "Jastrzębia Port",
       "price": "23 690 Kč",
       "imgPath": "./res/hotels/jastrzebia_port.jpg",
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
       "rating": [
         {
           "name": "Sofia Johnson",
@@ -131,7 +132,89 @@
       "name": "Villa del Mar",
       "price": "17 223 Kč",
       "imgPath": "./res/hotels/villa_del_mar.jpg",
-      "rating": 4.55,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "1.9"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "1.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "2.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "1.3"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "pets",
@@ -170,7 +253,89 @@
       "name": "Family Hel",
       "price": "30 292 Kč",
       "imgPath": "./res/hotels/family_hel.jpg",
-      "rating": 4.3,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "5.0"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "3.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "4.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "3.3"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "3.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "4.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
@@ -215,12 +380,94 @@
       "name": "Radisson Blu",
       "price": "23 030 Kč",
       "imgPath": "./res/hotels/atlantica_mikri_poli.jpg",
-      "rating": 4.05,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
         "breakfast-in-price",
-        "bikes"
+        "pets"
       ],
       "gallery": [
         {
@@ -259,11 +506,93 @@
       "name": "The Bonerowski Palace",
       "price": "25 223 Kč",
       "imgPath": "./res/hotels/belvedere.jpg",
-      "rating": 3.1,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "pets",
-        "bikes"
+        "breakfast-in-price"
       ],
       "gallery": [
         {
@@ -298,12 +627,93 @@
       "name": "Sheraton Grand",
       "price": "27 292 Kč",
       "imgPath": "./res/hotels/hermes.jpg",
-      "rating": 4.4,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
         "half-food-in-price",
-        "pets",
         "bikes"
       ],
       "gallery": [
@@ -343,10 +753,91 @@
       "name": "Hotel Copernicus",
       "price": "10 323 Kč",
       "imgPath": "./res/hotels/Random-House-image-1.jpg",
-      "rating": 2.60,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
-        "swimming-pool",
         "breakfast-in-price",
         "bikes"
       ],
@@ -387,9 +878,90 @@
       "name": "PURO Krakow Stare Miasto",
       "price": "18 253 Kč",
       "imgPath": "./res/hotels/Random-House-image-2.jpg",
-      "rating": 4.55,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
-        "wifi",
         "pets",
         "bikes"
       ],
@@ -426,11 +998,92 @@
       "name": "Hotel Bristol",
       "price": "30 292 Kč",
       "imgPath": "./res/hotels/Random-House-image-3.jpg",
-      "rating": 4.3,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
-        "half-food-in-price",
         "pets",
         "bikes"
       ],
@@ -471,9 +1124,90 @@
       "name": "H15 Boutique Hotel",
       "price": "23 690 Kč",
       "imgPath": "./res/hotels/Random-House-image-4.jpg",
-      "rating": 4.75,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
-        "wifi",
         "swimming-pool",
         "breakfast-in-price",
         "bikes"
@@ -515,11 +1249,93 @@
       "name": "Sofitel Victoria Warsaw",
       "price": "17 223 Kč",
       "imgPath": "./res/hotels/10.jpg",
-      "rating": 4.51,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "pets",
-        "bikes"
+        "swimming-pool"
       ],
       "gallery": [
         {
@@ -554,10 +1370,91 @@
       "name": "Raffles Europejski",
       "price": "30 520 Kč",
       "imgPath": "./res/hotels/11.jpg",
-      "rating": 4.27,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
-        "swimming-pool",
         "half-food-in-price",
         "pets",
         "bikes"
@@ -599,11 +1496,92 @@
       "name": "Nobu Hotel",
       "price": "22 900 Kč",
       "imgPath": "./res/hotels/12.jpg",
-      "rating": 4.75,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
-        "breakfast-in-price",
         "bikes"
       ],
       "gallery": [
@@ -643,7 +1621,89 @@
       "name": "InterContinental",
       "price": "16 302 Kč",
       "imgPath": "./res/hotels/13.jpg",
-      "rating": 4.79,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "pets",
@@ -682,9 +1742,90 @@
       "name": "Gdańsk Boutique",
       "price": "34 261 Kč",
       "imgPath": "./res/hotels/14.jpg",
-      "rating": 4.8,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
-        "wifi",
         "swimming-pool",
         "half-food-in-price",
         "pets",
@@ -727,7 +1868,89 @@
       "name": "Hotel Podewils",
       "price": "14 390 Kč",
       "imgPath": "./res/hotels/15.jpg",
-      "rating": 3.3,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
@@ -771,11 +1994,92 @@
       "name": "Dwór Oliwski",
       "price": "15 730 Kč",
       "imgPath": "./res/hotels/16.jpg",
-      "rating": 4.43,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
-        "pets",
-        "bikes"
+        "pets"
       ],
       "gallery": [
         {
@@ -810,12 +2114,93 @@
       "name": "PURO Hotel Gdańsk Stare Miasto",
       "price": "27 554 Kč",
       "imgPath": "./res/hotels/17.jpg",
-      "rating": 3.98,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
         "half-food-in-price",
-        "pets",
         "bikes"
       ],
       "gallery": [
@@ -855,12 +2240,94 @@
       "name": "IBB Hotel Długi Targ",
       "price": "23 800 Kč",
       "imgPath": "./res/hotels/18.jpg",
-      "rating": 4.34,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",
         "breakfast-in-price",
-        "bikes"
+        "pets"
       ],
       "gallery": [
         {
@@ -899,7 +2366,89 @@
       "name": "Hilton Gdansk",
       "price": "18 023 Kč",
       "imgPath": "./res/hotels/19.jpg",
-      "rating": 4.56,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "pets",
@@ -938,7 +2487,89 @@
       "name": "Dwór Oliwski City Hotel",
       "price": "31 393 Kč",
       "imgPath": "./res/hotels/20.jpg",
-      "rating": 4.45,
+      "description": "Náš hotel vás okouzlí svou elegantní architekturou a moderním designem, který se ladí s okolním prostředím. Nabízíme prostorné a vkusně zařízené pokoje a apartmány, které jsou vybaveny nejmodernějším vybavením pro váš pohodlí. Náš vstřícný personál je vždy připraven splnit veškerá vaše přání a poskytnout vám nejlepší služby.\nAbychom vám zajišťovali maximální relaxaci, naše wellness a relaxační zařízení jsou tu pro vás. Vychutnejte si chvíle odpočinku v našich saunách, bazénech a wellness centrech, které vám poskytnou dokonalou péči a regeneraci. Vaše chuťové buňky potěšíme našimi vyhlášenými restauracemi, které nabízejí široký výběr delikates a lahodných pokrmů.\nMimo luxusu našeho hotelu si můžete vychutnat krásy okolní přírody a objevovat zajímavé atrakce v blízkém okolí. Plážové aktivity, procházky v přírodě či návštěvy místních památek jsou jen některé z možností, které vám nabízíme.",
+      "rating": [
+        {
+          "name": "Sofia Johnson",
+          "rating": "4.1"
+        },
+        {
+          "name": "Oliver Smith",
+          "rating": "2.6"
+        },
+        {
+          "name": "Isabella Brown",
+          "rating": "3.3"
+        },
+        {
+          "name": "Liam Taylor",
+          "rating": "4.8"
+        },
+        {
+          "name": "Emma Anderson",
+          "rating": "2.9"
+        },
+        {
+          "name": "Noah Martinez",
+          "rating": "4.2"
+        },
+        {
+          "name": "Ava Thompson",
+          "rating": "3.7"
+        },
+        {
+          "name": "Sophia Clark",
+          "rating": "2.5"
+        },
+        {
+          "name": "Mia Rodriguez",
+          "rating": "4.4"
+        },
+        {
+          "name": "Lucas Lee",
+          "rating": "3.9"
+        },
+        {
+          "name": "Amelia Scott",
+          "rating": "2.8"
+        },
+        {
+          "name": "Benjamin Walker",
+          "rating": "4.6"
+        },
+        {
+          "name": "Charlotte Green",
+          "rating": "3.5"
+        },
+        {
+          "name": "Elijah Hall",
+          "rating": "2.4"
+        },
+        {
+          "name": "Harper Young",
+          "rating": "4.3"
+        },
+        {
+          "name": "Henry Baker",
+          "rating": "3.6"
+        },
+        {
+          "name": "Luna Adams",
+          "rating": "2.7"
+        },
+        {
+          "name": "James King",
+          "rating": "4.9"
+        },
+        {
+          "name": "Mila Turner",
+          "rating": "3.2"
+        },
+        {
+          "name": "Alexander Hill",
+          "rating": "2.3"
+        }
+      ],
       "badges": [
         "wifi",
         "swimming-pool",

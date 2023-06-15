@@ -1,18 +1,28 @@
-main{
+main {
 	flex: 1;
 	margin-top: var(--height_header);
 	display: flex;
 	flex-direction: column;
 	font-family: 'Bona Nova';
+	background: var(--color_background_tint);
 }
 
-.main-content-gap{
+.light-theme{
+	--color_background_tint: #00000000;
+	--color_small_text: #970C10;
+}
+.dark-theme{
+	--color_background_tint: #00000088;
+	--color_small_text: #a50000;
+}
+
+.main-content-gap {
 	display: block;
 	width: 100%;
 	height: var(--gap_height);
 }
 
-.travel-cards{
+.travel-cards {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(var(--travel_card_max_per_row), var(--travel_card_width));
@@ -21,7 +31,7 @@ main{
 	z-index: 1;
 }
 
-.travel-card{
+.travel-card {
 	display: flex;
 	flex-direction: column;
 	width: var(--travel_card_width);
@@ -32,23 +42,26 @@ main{
 	box-shadow: 3px 3px 4px var(--color_travel_card_shadow);
 	transition: transform 0.5s;
 }
-.travel-card:hover{
+
+.travel-card:hover {
 	transform: translateY(-5px);
 }
 
-.travel-card > img{
+.travel-card>img {
 	border-radius: 3px 3px 0px 0px;
 	width: 100%;
 	height: 150px;
 	object-fit: cover;
 }
-.travel-card-stars{
+
+.travel-card-stars {
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	grid-column: 2;
 }
-.travel-card-stars > div{
+
+.travel-card-stars>div {
 	display: flex;
 	width: 100%;
 	flex-direction: row;
@@ -56,7 +69,8 @@ main{
 	user-select: none;
 	place-self: start;
 }
-.travel-card-stars div div{
+
+.travel-card-stars div div {
 	display: flex;
 	width: 100%;
 	justify-content: center;
@@ -66,26 +80,34 @@ main{
 	margin-left: 0px;
 	padding: 5px 7px 5px 7px;
 }
-.travel-card-stars > div img{
+
+.travel-card-stars>div img {
 	width: 10px;
 	height: 10px;
 	filter: brightness(0.5);
 	object-fit: contain;
 	margin-right: 5px;
 }
-.travel-card-stars > div img.half_star, .travel-card-stars img.full_star{
+
+.travel-card-stars>div img.half_star,
+.travel-card-stars img.full_star {
 	filter: none;
 }
-.travel-card-stars div img.half_star, .travel-card-stars img.half_empty_star{
+
+.travel-card-stars div img.half_star,
+.travel-card-stars img.half_empty_star {
 	width: 5px;
 }
-.travel-card-stars div img.half_star{
+
+.travel-card-stars div img.half_star {
 	margin-right: 0px;
 }
-.travel-card-stars div img:last-child{
+
+.travel-card-stars div img:last-child {
 	margin-right: 0px;
 }
-.travel-card-stars div h4{
+
+.travel-card-stars div h4 {
 	font-family: 'Roboto Slab', serif;
 	display: inline-block;
 	position: relative;
@@ -98,7 +120,8 @@ main{
 	text-align: center;
 	margin-right: 5px;
 }
-.travel-card-stars h5{
+
+.travel-card-stars h5 {
 	font-family: 'Roboto Slab', serif;
 	display: flex;
 	justify-content: center;
@@ -110,26 +133,31 @@ main{
 	padding: 5px;
 	background: var(--color_travel_card_inverse);
 }
-.travel-card .travel-card-content{
+
+.travel-card .travel-card-content {
 	flex: 1;
 }
-.travel-card .travel-card-content-flex-layer{
+
+.travel-card .travel-card-content-flex-layer {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
-.travel-card .travel-card-content-grid-layer{
+
+.travel-card .travel-card-content-grid-layer {
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto max-content;
 }
-.travel-card .travel-card-hotel-display{
+
+.travel-card .travel-card-hotel-display {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-.travel-card .travel-card-hotel-display h3{
+
+.travel-card .travel-card-hotel-display h3 {
 	color: #FFFFFF;
 	font-size: var(--travel_card_name_size);
 	overflow: hidden;
@@ -143,7 +171,7 @@ main{
 
 
 
-.travel-card .travelCardNext{
+.travel-card .travelCardNext {
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -151,12 +179,13 @@ main{
 	background: var(--color_travel_card_inverse);
 	padding: 5px;
 }
-.travel-card .travelCardNext:hover{
+
+.travel-card .travelCardNext:hover {
 	margin: 3px;
 	border: 2px solid #FFF;
 }
 
-.top-img{
+.top-img {
 	height: 100vh;
 	width: 100vw;
 	object-fit: cover;
@@ -164,10 +193,11 @@ main{
 	z-index: -1;
 }
 
-.subtitle *{
+.subtitle * {
 	transition: font-size 0.2s;
 }
-.subtitle{
+
+.subtitle {
 	width: 100%;
 	height: 200px;
 	background: #FFFFFFAA;
@@ -176,20 +206,23 @@ main{
 	align-items: center;
 	justify-content: center;
 }
-.subtitle h1{
+
+.subtitle h1 {
 	font-size: 70px;
 	color: #970C10;
 }
-.subtitle h2#polsko{
+
+.subtitle h2#polsko {
 	font-size: 40px;
 	color: #000C66;
 }
-.subtitle h2:last-of-type{
+
+.subtitle h2:last-of-type {
 	font-size: 20px;
 	color: #000C66;
 }
 
-.subtitle-small{
+.subtitle-small {
 	width: 100%;
 	height: 50px;
 	display: flex;
@@ -198,22 +231,25 @@ main{
 	justify-content: center;
 }
 
-.travel-card-status-display div:first-child{
+.travel-card-status-display div:first-child {
 	margin-top: 5px;
 }
-.travel-card-status-display div img{
+
+.travel-card-status-display div img {
 	width: 30px;
 	margin-left: 10px;
 	background: #FFFFFF;
 	border-radius: 20px;
 	padding: 2px;
 }
-.travel-card-status-display div h3{
+
+.travel-card-status-display div h3 {
 	font-size: 15px;
 	color: #000000;
 	margin-left: 10px;
 }
-.travel-card-status-display div{
+
+.travel-card-status-display div {
 	padding: 5px;
 	display: flex;
 	align-items: center;
@@ -221,31 +257,34 @@ main{
 
 
 
-.subtitle-small h2{
+.subtitle-small h2 {
 	font-size: 30px;
-	color: #970C10;
+	color: var(--color_small_text);
 	font-family: 'Tilt Prism', cursive;
 }
 
-@media screen and (max-width: calc(300px * 3 + 60px*4)) and (min-width: calc(300px * 2 + 60px*3)){
-	.travel-cards{
-    	grid-template-columns: repeat(2, var(--travel_card_width));
-    }
-}
-@media screen and (max-width: calc(300px * 2 + 60px*3)){
-	.travel-cards{
-    	grid-template-columns: repeat(1, var(--travel_card_width));
-    }
+@media screen and (max-width: calc(300px * 3 + 60px*4)) and (min-width: calc(300px * 2 + 60px*3)) {
+	.travel-cards {
+		grid-template-columns: repeat(2, var(--travel_card_width));
+	}
 }
 
-@media screen and (max-width: 540px){
-	.subtitle h1{
+@media screen and (max-width: calc(300px * 2 + 60px*3)) {
+	.travel-cards {
+		grid-template-columns: repeat(1, var(--travel_card_width));
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.subtitle h1 {
 		font-size: 45px;
 	}
-	.subtitle h2#polsko{
-        font-size: 30px !important;
-    }
-    .subtitle h2:last-of-type{
-        font-size: 15px !important;
-    }
+
+	.subtitle h2#polsko {
+		font-size: 30px !important;
+	}
+
+	.subtitle h2:last-of-type {
+		font-size: 15px !important;
+	}
 }

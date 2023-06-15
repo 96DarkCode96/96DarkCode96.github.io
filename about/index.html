@@ -18,7 +18,6 @@
 		<link href="./css/footer.css" rel="stylesheet">
 		<link href="./css/global.css" rel="stylesheet">
 		<script src="./scripts/antileak.js"></script>
-		<script src="./scripts/jquery-3.6.4.min.js"></script>
 	</head>
 	<body>
 		<div class="pageLoader">
@@ -147,7 +146,7 @@ V Polsku vás čeká mnoho aktivit, které si můžete užít, jako například 
 				</div>
 			</div>
 			<div class="contact-layer">
-				<form class="contact-form" action="./sendMessage/index.php">
+				<form class="contact-form">
 					<table>
 						<tr>
 							<td>
@@ -223,6 +222,18 @@ V Polsku vás čeká mnoho aktivit, které si můžete užít, jako například 
 		<script src="./scripts/dropdownmenu.js"></script>
 		<script>
 			document.querySelectorAll(".pageLoader")[0].style.display = "none";
+			document.querySelector(".contact-form").addEventListener("submit", (e) => {
+				e.preventDefault();
+				var el = document.createElement("div");
+				el.innerHTML = "<div><h1>* Došlo k chybě *<br><br>Váš požadavek nebyl zpracován!</h1></div>";
+				el.addEventListener("click", (e) => {
+					document.body.removeChild(el);
+					document.body.style.overflow = "unset";
+				});
+				document.body.style.overflow = "hidden";
+				el.classList.add("bookError");
+				document.body.appendChild(el);
+			});
 		</script>
 	</body>
 </html>

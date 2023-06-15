@@ -182,6 +182,10 @@
     padding: 10px;
     margin: 10px;
 }
+.contact-submit:hover{
+    cursor: pointer;
+    background: #BBB;
+}
 .contact-layer{
     display: flex;
     justify-content: center;
@@ -200,4 +204,33 @@
         padding-left: 5%;
         text-align: left !important;
     }
+}
+.bookError{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	position: fixed;
+	background: #22222288;
+	z-index: 9999999;
+	justify-content: center;
+	align-items: center;
+}
+.bookError > div{
+	position: relative;
+    width: 300px;
+    height: 200px;
+
+    background: var(--color_background_dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--color_loader);
+}
+.bookError > div > h1{
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	padding: 10px;
+	font-size: 25px;
 }
